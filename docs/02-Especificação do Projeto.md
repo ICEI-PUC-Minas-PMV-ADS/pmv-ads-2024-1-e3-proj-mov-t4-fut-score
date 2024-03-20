@@ -14,6 +14,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | Frustrações | Dificuldade em encontrar informações confiáveis e atualizadas sobre jogos e competições | Falta de um aplicativo completo e confiável para acompanhar jogos e competições de futebol |
 | Hobbies | ● Futebol <br> ● Viagens <br> ● Corrida | ● Futebol <br> ● Tecnologia <br> ● Culinária |
 
+
 |            |    Pedro Cardoso                     | 
 |------------|-----------------------------------|-------------------------------------|
 |            |                                      | 
@@ -21,7 +22,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | Ocupação:           | Trabalha em uma secretaria administrativa.       | 
 | Aplicativos:           | ● Instagram <br> ● TikTok                    | 
 | Motivações:           | Fanatismo pelo clube, e poder estar sempre atualizado para zoar os amigos.                | 
-| Frustações:           |  Dificuldade em encontrar um aplicativo confiável e atualizado para acompanhar os jogos.                  | 
+| Frustações:           |  Dificuldade em encontrar um aplicativo confiável e atualizado para acompanhar os jogos.                | 
 | Hobbies:           |    ● Futebol <br> ● Caravanas <br> ● Festas                 | 
 
 
