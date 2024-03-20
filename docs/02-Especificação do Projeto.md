@@ -17,7 +17,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 |            |    Pedro Cardoso                     | 
 |------------|-----------------------------------|
-|            |  <div align="center"><img src="https://https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-fut-score/blob/main/docs/img/avatar3.jpg" width="300" ></div> | 
+|            |  <div align="center"><img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-fut-score/blob/main/docs/img/avatar3.jpg" width="300" ></div> | 
 | Idade:          |  25                                  | 
 | Ocupação:           | Trabalha em uma secretaria administrativa.       | 
 | Aplicativos:           | ● Instagram <br> ● TikTok                    | 
