@@ -16,7 +16,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 
 |            |    Pedro Cardoso                     | 
-|------------|-----------------------------------|-------------------------------------|
+|------------|-----------------------------------|
 |            |                                      | 
 | Idade:          |  25                                  | 
 | Ocupação:           | Trabalha em uma secretaria administrativa.       | 
