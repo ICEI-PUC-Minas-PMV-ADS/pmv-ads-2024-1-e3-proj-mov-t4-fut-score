@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# FutScore
 
-`CURSO`
+Tecnólogo em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 4 - 2024/1
 
-`SEMESTRE`
+3° Semestre
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
+O site FutScore surge como uma solução acessível e abrangente para os fãs do futebol brasileiro, oferecendo placares ao vivo, tabelas, jogos futuros, informações sobre times e muito mais. O objetivo é fornecer aos usuários um ambiente digital seguro e confiável, onde eles possam se manter informados e engajados com o esporte que amam.
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+- Caio Santos Celestino da Costa
+- Carlos Henrique Santos da Silva
+- Matheus Gonçalves de Oliveira Machado
+- Thiago Pontes Gazzinelli
+- Victor Gabriel Barbosa de Araújo
+- Vinicius Henrique Alves Mariano
 
 ## Orientador
 
-* Nome completo do professor 1
+- Diego Roberto Gonçalves de Pontes
 
 ## Instruções de utilização
 
