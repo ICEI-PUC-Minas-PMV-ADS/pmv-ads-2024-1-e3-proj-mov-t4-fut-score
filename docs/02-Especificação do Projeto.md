@@ -1,4 +1,4 @@
-2. Especificação do Projeto
+### 2. Especificação do Projeto
 
 A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
@@ -17,7 +17,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 |            |    Pedro Cardoso                     | 
 |------------|-----------------------------------|
-|            |                                      | 
+|            |  <div align="center"><img src="" width="300" title="Pedro Cardoso"></div>                                     | 
 | Idade:          |  25                                  | 
 | Ocupação:           | Trabalha em uma secretaria administrativa.       | 
 | Aplicativos:           | ● Instagram <br> ● TikTok                    | 
