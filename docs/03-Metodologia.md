@@ -1,7 +1,7 @@
 
 # Metodologia
 
-A equipe utilizará uma metodologia ágil e colaborativa para desenvolver o projeto JobHub, com entregas frequentes de funcionalidades. Serão usados editores de código, navegadores e ferramentas de colaboração, como o Trello, para gerenciar o processo de desenvolvimento. O código-fonte será gerenciado usando o GitHub. A equipe também usará práticas eficazes de gestão de times para garantir que o projeto seja entregue no prazo.
+A equipe utilizará uma metodologia ágil e colaborativa para desenvolver o projeto Futscore, com entregas frequentes de funcionalidades. Serão usados editores de código, navegadores e ferramentas de colaboração, para gerenciar o processo de desenvolvimento. O código-fonte será gerenciado usando o GitHub. A equipe também usará práticas eficazes de gestão de times para garantir que o projeto seja entregue no prazo.
 
 ## Controle de Versão
 
@@ -32,8 +32,8 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 - Scrum Master: Matheus Gonçalves de Oliveira Machado;
 - Product Owner: Carlos Henrique Santos da Silva;
-- Equipe de Desenvolvimento: Thiago Pontes Gazzinelli, Vinicius Henrique Alves Mariano, Andréia Borges da Silva de Moura Fé, Matheus Gonçalves de Oliveira Machado;
-- Equipe de Design: Bianca Cristina Sousa Santana;
+- Equipe de Desenvolvimento: Thiago Pontes Gazzinelli, Vinicius Henrique Alves Mariano, Caio Santos Celestino da Costa, Matheus Gonçalves de Oliveira Machado;
+- Equipe de Design: Victor Gabriel Barbosa de Araújo;
 
 ### Processo
 
