@@ -1,14 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
-
-## Relação de Ambientes de Trabalho
-
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+A equipe utilizará uma metodologia ágil e colaborativa para desenvolver o projeto JobHub, com entregas frequentes de funcionalidades. Serão usados editores de código, navegadores e ferramentas de colaboração, como o Trello, para gerenciar o processo de desenvolvimento. O código-fonte será gerenciado usando o GitHub. A equipe também usará práticas eficazes de gestão de times para garantir que o projeto seja entregue no prazo.
 
 ## Controle de Versão
 
@@ -31,57 +24,50 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+- Scrum Master: Matheus Gonçalves de Oliveira Machado;
+- Product Owner: Carlos Henrique Santos da Silva;
+- Equipe de Desenvolvimento: Thiago Pontes Gazzinelli, Vinicius Henrique Alves Mariano, Andréia Borges da Silva de Moura Fé, Matheus Gonçalves de Oliveira Machado;
+- Equipe de Design: Bianca Cristina Sousa Santana;
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
+
+**Backlog**: Lista que contém todas as funcionalidades que serão desenvolvidas no projeto. O Product Owner é responsável por definir as funcionalidades que serão implementadas e priorizá-las de acordo com a necessidade do cliente e do negócio.
+
+**To Do**: Lista que contém as tarefas que ainda não foram iniciadas e que precisam ser desenvolvidas. Essa lista é atualizada diariamente pelo Scrum Master, que deve garantir que as tarefas estejam claras e que a equipe tenha conhecimento das prioridades.
+
+**In Progress**: Lista que contém as tarefas que estão em andamento. É importante que a equipe atualize o status das tarefas para que o Scrum Master possa acompanhar o andamento do projeto e garantir que tudo esteja caminhando conforme o planejado.
+
+**Testing**: Esta lista engloba as tarefas que estão em fase de testes. Os testadores devem verificar as funcionalidades implementadas, garantindo que estão funcionando corretamente e identificando possíveis erros para correção antes de serem movidas para a coluna "Done". Atualizações regulares nesta coluna ajudam a equipe a manter um acompanhamento preciso do progresso do projeto.
+
+**Done**: Lista que contém as tarefas que foram concluídas. É importante que a equipe atualize essa lista diariamente para que o Scrum Master possa acompanhar o progresso do projeto e garantir que as tarefas estejam sendo concluídas dentro do prazo estabelecido.
+
+O uso dessas listas permite que a equipe tenha uma visão clara do que precisa ser feito, do que já foi concluído e do que está em andamento, facilitando a colaboração e o trabalho em equipe. Além disso, o Trello também permite a atribuição de responsabilidades e prazos para cada tarefa, garantindo que o projeto esteja caminhando dentro do prazo estabelecido.
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+| Ambiente | Plataforma | Link de Acesso |
+| --- | --- | --- |
+| Editor de Código | Visual Studio Code | https://code.visualstudio.com/ |
+| Ferramenta de comunicação | Discord | https://discord.com/ |
+| Gerenciamento do Projeto | Github | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/614 |
+| Projeto de Interface e Wireframes | Marvel |(https://marvelapp.com/project/6831630)|
+| Controle de Versão | Git | https://git-scm.com/ |
+| Repositório | GitHub | [JobHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t9-jobhub) |
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. 
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+As ferramentas de comunicação utilizada é completa e de fácil acesso e por isso foi selecionada. 
+
+O Trello foi utilizado para gerenciamento do projeto por ser uma ferramenta intuitiva, flexível, colaborativa, com recursos para gerenciamento de tarefas e acessível.
+
+Para criação dos wireframes, utilizamos essa ferramenta porque ela é completa e pode ser usada de forma gratuita, podendo ter edição simultânea de telas por diferentes membros do grupo.
