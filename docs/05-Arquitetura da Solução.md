@@ -12,7 +12,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Modelo ER
 
-![Modelo ER](img/modeloer.png)
+![Modelo ER](img/modelo er.png)
 
 
 ## Modelo Físico
