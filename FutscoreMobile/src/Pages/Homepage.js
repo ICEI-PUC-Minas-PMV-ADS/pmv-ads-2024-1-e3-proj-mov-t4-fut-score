@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, Text } from 'react-native';
 import GameCard from '../components/GameCard';
+import Campeonatos from '../components/Campeonatos'
 
 const games = [
   {
@@ -21,6 +22,10 @@ const games = [
 const Homepage = () => {
   return (
     <View style={{ flex: 1, padding: 16 }}>
+      <View>
+        <Campeonatos />
+      </View>
+
       <FlatList
         data={games}
         keyExtractor={(item, index) => index.toString()}
