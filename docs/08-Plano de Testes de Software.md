@@ -1,7 +1,5 @@
 # Plano de Testes de Software
 
-# Plano de Testes de Software
-
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
 | **Caso de Teste** 	| **CT-01 – Ver jogos Ao-vivo** 	|
