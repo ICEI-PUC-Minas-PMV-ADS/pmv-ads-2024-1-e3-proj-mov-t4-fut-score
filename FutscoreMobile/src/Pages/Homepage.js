@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, FlatList, Text } from 'react-native';
+import { View, FlatList, Text, StyleSheet } from 'react-native';
 import GameCard from '../components/GameCard';
-import Campeonatos from '../components/Campeonatos'
+import Campeonatos from '../components/Campeonatos';
 import Navbar from '../components/NavBar';
 
 const games = [
@@ -22,28 +22,35 @@ const games = [
 
 const Homepage = () => {
   return (
-    <View>
-   <Navbar title={'FutScore'} />
-    <View style={{ flex: 1, padding: 16 }}>
-     <View>
+    <View style={styles.container}>
+      <Navbar title={'FutScore'} />
+      <View style={styles.contentContainer}>
         <Campeonatos />
+        <FlatList
+          data={games}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item }) => (
+            <GameCard
+              homeTeam={item.homeTeam}
+              awayTeam={item.awayTeam}
+              homeScore={item.homeScore}
+              awayScore={item.awayScore}
+            />
+          )}
+        />
       </View>
-    
-      <FlatList
-        data={games}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <GameCard
-            homeTeam={item.homeTeam}
-            awayTeam={item.awayTeam}
-            homeScore={item.homeScore}
-            awayScore={item.awayScore}
-          />
-        )}
-      />
-    </View>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16
+  },
+  contentContainer: {
+    flex: 1
+  }
+});
 
 export default Homepage;

@@ -4,19 +4,18 @@ import { StyleSheet } from 'react-native';
 
 const Navbar = ({ title }) => {
   return (
-    <Appbar.Navbar style={styles.headerStyle}>
+    <Appbar.Header style={styles.headerStyle}>
       <Appbar.Content title={title} titleStyle={styles.titleStyle} />
-    </Appbar.Navbar>
+    </Appbar.Header>
   );
 };
 
-// StyleSheet para definir os estilos
 const styles = StyleSheet.create({
   headerStyle: {
-    backgroundColor: '#228B22' // Define a cor de fundo do cabeçalho
+    backgroundColor: '#228B22',  // Define a cor de fundo do cabeçalho
   },
   titleStyle: {
-    textAlign: 'center' // Centraliza o texto no título
+    textAlign: 'center',  // Centraliza o texto no título
   }
 });
 
