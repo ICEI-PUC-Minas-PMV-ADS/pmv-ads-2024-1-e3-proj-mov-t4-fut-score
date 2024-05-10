@@ -1,7 +1,9 @@
 import React from 'react';
-import { View, FlatList, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { View, FlatList, StyleSheet } from 'react-native';
 import GameCard from '../components/GameCard';
-import Campeonatos from '../components/Campeonatos'
+import Header from '../components/Header';
+import Campeonatos from '../components/Campeonatos';
 
 const games = [
   {
@@ -21,25 +23,35 @@ const games = [
 
 const Homepage = () => {
   return (
-    <View style={{ flex: 1, padding: 16 }}>
-      <View>
+    <SafeAreaView style={styles.container}>
+      <Header title={'FutScore'} />
+      <View style={styles.content}>
         <Campeonatos />
+        <FlatList
+          data={games}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item }) => (
+            <GameCard
+              homeTeam={item.homeTeam}
+              awayTeam={item.awayTeam}
+              homeScore={item.homeScore}
+              awayScore={item.awayScore}
+            />
+          )}
+        />
       </View>
-
-      <FlatList
-        data={games}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item }) => (
-          <GameCard
-            homeTeam={item.homeTeam}
-            awayTeam={item.awayTeam}
-            homeScore={item.homeScore}
-            awayScore={item.awayScore}
-          />
-        )}
-      />
-    </View>
+    </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, // Garante que a SafeAreaView ocupa todo o espaço da tela
+  },
+  content: {
+    flex: 1, // Permite que o conteúdo abaixo do Header ocupe todo o espaço restante
+    padding: 16, // Adiciona um padding interno ao conteúdo
+  },
+});
 
 export default Homepage;
