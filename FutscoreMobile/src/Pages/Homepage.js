@@ -2,6 +2,7 @@ import React from 'react';
 import { View, FlatList, Text } from 'react-native';
 import GameCard from '../components/GameCard';
 import Campeonatos from '../components/Campeonatos'
+import Navbar from '../components/NavBar';
 
 const games = [
   {
@@ -21,11 +22,13 @@ const games = [
 
 const Homepage = () => {
   return (
+    <View>
+   <Navbar title={'FutScore'} />
     <View style={{ flex: 1, padding: 16 }}>
-      <View>
+     <View>
         <Campeonatos />
       </View>
-
+    
       <FlatList
         data={games}
         keyExtractor={(item, index) => index.toString()}
@@ -38,6 +41,7 @@ const Homepage = () => {
           />
         )}
       />
+    </View>
     </View>
   );
 };
