@@ -1,11 +1,11 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Homepage from './src/Pages/Homepage';
+import LoginScreen from './src/Pages/Login';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <Homepage />
+      <LoginScreen />
     </SafeAreaProvider>
   );
 }
