@@ -10,9 +10,9 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName='FutScore'>
-          <Stack.Screen name="FutScore" component={Homepage} />
-          <Stack.Screen name="Estatisticas" component={Estatisticas} />
+        <Stack.Navigator initialRouteName='Homepage'>
+          <Stack.Screen name="Homepage" component={Homepage} options={{title: 'FutScore', headerStyle:{backgroundColor: '#4caf50'}, headerTitleAlign: 'center'}}/>
+          <Stack.Screen name="Estatisticas" component={Estatisticas} options={{headerStyle:{backgroundColor: '#4caf50'}}}/>
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
