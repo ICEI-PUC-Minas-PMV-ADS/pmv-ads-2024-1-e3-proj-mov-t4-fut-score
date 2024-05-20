@@ -1,39 +1,36 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore }) => {
+const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
   return (
-    <View style={styles.container}>
-      <View style={styles.card}>
-        <View style={styles.teamContainer}>
-          {/* Logo do time da casa */}
-          <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
-          {/* Nome do time da casa */}
-          <Text style={styles.teamName}>{homeTeam.name}</Text>
-        </View>
-        {/* Placar */}
-        <Text style={styles.score}>
-          {homeScore} - {awayScore}
-        </Text>
-        <View style={styles.teamContainer}>
-          {/* Logo do time visitante */}
-          <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
-          {/* Nome do time visitante */}
-          <Text style={styles.teamName}>{awayTeam.name}</Text>
+    <TouchableOpacity onPress={() => navigation.navigate('Estatisticas', { homeTeam, awayTeam, homeScore, awayScore })}>
+      <View style={styles.container}>
+        <View style={styles.card}>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{homeTeam.name}</Text>
+          </View>
+          <Text style={styles.score}>
+            {homeScore} - {awayScore}
+          </Text>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{awayTeam.name}</Text>
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center', // Centraliza verticalmente
-    alignItems: 'center', // Centraliza horizontalmente
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   card: {
-    width: '70%', // Define a largura do card como 80% da largura da tela
+    width: '70%',
     backgroundColor: '#ffffff',
     padding: 16,
     borderRadius: 8,

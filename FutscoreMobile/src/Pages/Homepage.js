@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, FlatList, StyleSheet } from 'react-native';
+
 import GameCard from '../components/GameCard';
 import Header from '../components/Header';
 import Campeonatos from '../components/Campeonatos';
@@ -21,23 +22,23 @@ const games = [
   // Outros jogos...
 ];
 
-const Homepage = () => {
+const Homepage = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header title={'FutScore'} />
       <View style={styles.content}>
         <Campeonatos />
         <FlatList
           data={games}
           keyExtractor={(item, index) => index.toString()}
-          renderItem={({ item }) => (
-            <GameCard
+          renderItem={({ item }) => 
+            <GameCard 
               homeTeam={item.homeTeam}
               awayTeam={item.awayTeam}
               homeScore={item.homeScore}
               awayScore={item.awayScore}
+              navigation={navigation}
             />
-          )}
+          }
         />
       </View>
     </SafeAreaView>
