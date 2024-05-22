@@ -1,10 +1,15 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Botao from '../components/Button';
 
 const Estatisticas = ({ route }) => {
   const { homeTeam, awayTeam, homeScore, awayScore } = route.params;
+
+  // Estados para controlar a visibilidade dos modais
+  const [isEscalacaoVisible, setEscalacaoVisible] = useState(false);
+  const [isClassificacaoVisible, setClassificacaoVisible] = useState(false);
+  const [isEstatisticasVisible, setEstatisticasVisible] = useState(false);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -23,20 +28,69 @@ const Estatisticas = ({ route }) => {
       </View>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => setEscalacaoVisible(true)}>
           <Botao text="Escalação" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => setClassificacaoVisible(true)}>
           <Botao text="Classificação" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => setEstatisticasVisible(true)}>
           <Botao text="Estatísticas" />
         </TouchableOpacity>
       </View>
 
+      {/* Modal para Escalação */}
+      <Modal
+        visible={isEscalacaoVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setEscalacaoVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text>Escalação</Text>
+            <TouchableOpacity onPress={() => setEscalacaoVisible(false)}>
+              <Text>FECHAR</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+
+      {/* Modal para Classificação */}
+      <Modal
+        visible={isClassificacaoVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setClassificacaoVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text>Classificação</Text>
+            <TouchableOpacity onPress={() => setClassificacaoVisible(false)}>
+              <Text>FECHAR</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+      {/* Modal para Estatísticas */}
+      <Modal
+        visible={isEstatisticasVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setEstatisticasVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text>Estatísticas</Text>
+            <TouchableOpacity onPress={() => setEstatisticasVisible(false)}>
+              <Text>FECHAR</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
       <View style={styles.infoContainer}>
-          <Text>INFORMAÇÕES</Text>
-          <Text>Informações será mostrada aqui</Text>
+        <Text>INFORMAÇÕES</Text>
+        <Text>Informações será mostrada aqui</Text>
         <View>
 
         </View>
@@ -95,7 +149,7 @@ const styles = StyleSheet.create({
     width: '90%',
     marginVertical: 1, // Espaçamento vertical entre os botões
   },
-  infoContainer:{
+  infoContainer: {
     marginTop: 20,
     width: '90%',
     height: '40%',
@@ -110,7 +164,24 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     justifyContent: 'space-between',
     alignItems: 'center',
-  }
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    width: '80%',
+    padding: 20,
+    paddingBottom: '50%',
+    backgroundColor: 'white',
+    borderRadius: 8,
+    alignItems: 'center',
+    
+
+  },
+
 });
 
 export default Estatisticas;
