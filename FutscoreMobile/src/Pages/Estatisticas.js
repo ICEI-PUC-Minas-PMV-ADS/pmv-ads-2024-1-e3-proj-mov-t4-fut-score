@@ -35,8 +35,9 @@ const Estatisticas = ({ route }) => {
       </View>
 
       <View style={styles.infoContainer}>
+          <Text>INFORMAÇÕES</Text>
+          <Text>Informações será mostrada aqui</Text>
         <View>
-          <Text>INFO</Text>
 
         </View>
       </View>
@@ -95,7 +96,20 @@ const styles = StyleSheet.create({
     marginVertical: 1, // Espaçamento vertical entre os botões
   },
   infoContainer:{
-    marginTop: 20
+    marginTop: 20,
+    width: '90%',
+    height: '40%',
+    backgroundColor: '#ffffff',
+    padding: 16,
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 4,
+    marginBottom: 16,
+    justifyContent: 'space-between',
+    alignItems: 'center',
   }
 });
 
