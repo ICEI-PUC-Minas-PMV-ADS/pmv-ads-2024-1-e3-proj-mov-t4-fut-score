@@ -8,7 +8,7 @@ export default Campeonatos = () => {
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.title}>Campeonatos</Text>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={true}>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={false}>
                 <View style={styles.campeonatos}>
 
                     <TouchableOpacity style={styles.button}>
