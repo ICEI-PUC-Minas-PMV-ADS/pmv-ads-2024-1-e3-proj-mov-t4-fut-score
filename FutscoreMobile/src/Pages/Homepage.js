@@ -19,6 +19,12 @@ const games = [
     homeScore: 3,
     awayScore: 3,
   },
+  {
+    homeTeam: { name: 'COR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png' },
+    awayTeam: { name: 'GRE', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_96x96.png' },
+    homeScore: 0,
+    awayScore: 0,
+  },
   // Outros jogos...
 ];
 
