@@ -11,6 +11,7 @@ import Homepage from "./src/Pages/Homepage";
 import Cadastro from "./src/Pages/Cadastro";
 import LoginScreen from "./src/Pages/Login";
 import Estatisticas from "./src/Pages/Estatisticas"; 
+import Perfil from "./src/Pages/Perfil";
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -75,6 +76,21 @@ export default function App() {
               headerTintColor: '#ffffff', 
             }}
             component={HomeStack}
+          />
+          <Drawer.Screen
+            name="Perfil"
+            options={{
+              drawerLabel: "Perfil",
+              title: "Futscore",
+              headerTitleAlign: 'center',
+              headerStyle: { backgroundColor: '#228B22' },
+              drawerIcon: () => (
+                <MaterialIcons name="login" size={20} color="#808080" />
+              ),
+              drawerLabelStyle: { color: '#ffffff' }, 
+              headerTintColor: '#ffffff', 
+            }}
+            component={Perfil}
           />
           <Drawer.Screen
             name="Login"
