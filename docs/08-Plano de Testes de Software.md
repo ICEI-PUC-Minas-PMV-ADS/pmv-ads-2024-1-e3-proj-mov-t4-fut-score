@@ -19,7 +19,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Requisito Associado | RF-03 O aplicativo deve exibir estatísticas dos jogos das competições |
 | Objetivo do Teste 	| Verificar se o usuário consegue ver as estatísticas do jogo. |
 | Passos 	| - Acessar o aplicativo <br> - Acessar a pagina Home <br> - Ir no card do jogo ao vivo <br> |
-|Critério de Êxito | - A visualização das estatísticas não foi realizada. |
+|Critério de Êxito | - A visualização das estatísticas foi parcialmente realizada. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-04 – Calendário de jogos**	|
 |Requisito Associado | RF-04 O aplicativo deve permitir o acesso a calendários de jogos futuros e partidas |
@@ -31,7 +31,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Requisito Associado | RF-05 O aplicativo deve permitir que os usuários crie sua conta |
 | Objetivo do Teste 	| Verificar se o usuário conegue realizar cadrasto. |
 | Passos 	| - Acessar o aplicativo <br> - Acessar a pagina Home <br> - Acessar ícone de perfil  <br> - Clicar em botão de login <br> |
-|Critério de Êxito | - A aplicação não foi realizada. |
+|Critério de Êxito | - A aplicação pode ser realizada. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-06 – Personalizar Perfil**	|
 |Requisito Associado | RF-06 O aplicativo deve permitir que o usuário personalize sua página de perfil |
