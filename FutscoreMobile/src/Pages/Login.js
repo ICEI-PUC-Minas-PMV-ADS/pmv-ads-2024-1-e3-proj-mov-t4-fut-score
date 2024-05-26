@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, Button, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, View, TextInput, Button, SafeAreaView, Text, TouchableOpacity } from 'react-native';
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
     // Aqui você pode adicionar a lógica de autenticação
     console.log('Email:', email, 'Password:', password);
+  };
+
+  const handleNavigateToSignUp = () => {
+    navigation.navigate('Cadastro'); // Navega para a tela de cadastro
   };
 
   return (
@@ -31,7 +35,11 @@ const LoginScreen = () => {
         <Button
           title="Entrar"
           onPress={handleLogin}
+          color="#000" // Define a cor do botão para preto
         />
+        <TouchableOpacity onPress={handleNavigateToSignUp}>
+          <Text style={styles.signUpText}>Não tem uma conta? Cadastrar</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -67,6 +75,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 20,
     textAlign: 'center',
+  },
+  signUpText: {
+    marginTop: 20,
+    color: '#228B22', 
+    textAlign: 'center',
+    textDecorationLine: 'underline',
   },
 });
 
