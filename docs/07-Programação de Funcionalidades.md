@@ -32,30 +32,30 @@ Nesta sessão, o usuário, assim que abrir irá conseguir ver os detalhes do jog
 * ../Components/Campeonatos.js
 
 
-## 2. Perfil
+## 3. Perfil
 ![Perfil](img/Perfil2.png)
 
 Nesta sessão, o usuário, assim que abrir irá visualizar seu perfil com seu time favorito.
-### 2.1 Requisitos atendidos:
+### 3.1 Requisitos atendidos:
 * RF-06	O aplicativo deve permitir que o usuário personalize sua página de perfil.
 * RF-07	O aplicativo devera exibir informações sobre time do usuário em sua página de perfil.
 
 
-### 2.2 Artefatos de Funcionnalidade:
+### 3.2 Artefatos de Funcionnalidade:
 * ../Pages/Perfil.js
 * ../Components/GameCard.js
 * ../Components/Campeonatos.js
 
 
-## 2. Cadastro/Login 
+## 4. Cadastro/Login 
 ![Login](img/Login2.png) 
 ![Cadastro](img/Cadastro2.png)
 
 Nesta sessão, o usuário, poderá se cadastrar no app, assim como logar.
-### 2.1 Requisitos atendidos:
+### 4.1 Requisitos atendidos:
 RF-05	O aplicativo deve permitir que os usuários crie sua conta
 
-### 2.2 Artefatos de Funcionnalidade:
+### 4.2 Artefatos de Funcionnalidade:
 * ../Pages/Login.js
 * ../Page/Cadastro.js
   
