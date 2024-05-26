@@ -14,3 +14,20 @@ Nesta sessão, o usuário, assim que abrir o site verá os jogos que estão acon
 * ../components/GameCard.js
 * ../components/Header.js
 * ./pages/Homepage.js
+
+
+## 2. Estatísticas 
+![Estatísticas](img/Estatísticas.png)
+
+Nesta sessão, o usuário, assim que abrir irá conseguir ver os detalhes do jogo.
+### 2.1 Requisitos atendidos:
+* RF-02	O aplicativo deve exibir tabelas das competições.
+* RF-03	O aplicativo deve exibir estatísticas dos jogos das competições.
+
+
+### 2.2 Artefatos de Funcionnalidade:
+* ../Pages/Homepage.js
+* ../Pages/Estatísticas.js
+* ../Components/GameCard.js
+* ../Components/Campeonatos.js
+  
