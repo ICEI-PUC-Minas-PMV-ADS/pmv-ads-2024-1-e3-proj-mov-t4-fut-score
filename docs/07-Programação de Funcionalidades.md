@@ -58,5 +58,18 @@ RF-05	O aplicativo deve permitir que os usuários crie sua conta
 ### 4.2 Artefatos de Funcionnalidade:
 * ../Pages/Login.js
 * ../Page/Cadastro.js
-  
+
+
+
+## 5. Classificação
+![Classificação](img/SerieAtab.png)
+
+Nesta sessão, o usuário, conseguirá ver a a classificação do campeonato.
+### 5.1 Requisitos atendidos:
+* RF-02	O aplicativo deve exibir tabelas das competições.
+
+
+### 5.2 Artefatos de Funcionnalidade:
+* ../Pages/SerieA.js
+
   
