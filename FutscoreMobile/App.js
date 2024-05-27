@@ -10,8 +10,9 @@ import { SimpleLineIcons, MaterialIcons, MaterialCommunityIcons } from "@expo/ve
 import Homepage from "./src/Pages/Homepage";
 import Cadastro from "./src/Pages/Cadastro";
 import LoginScreen from "./src/Pages/Login";
-import Estatisticas from "./src/Pages/Estatisticas"; 
+import Estatisticas from "./src/Pages/Estatisticas";
 import Perfil from "./src/Pages/Perfil";
+import StatsTable from "./src/Pages/SerieA";
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -36,9 +37,10 @@ function HomeStack({ navigation }) {
       <Stack.Screen
         name="Estatisticas"
         component={Estatisticas}
-        options={{ headerStyle: { backgroundColor: '#228B22' },
-        headerTintColor: '#fff', // Define a cor do texto para branco
-         headerTitleAlign: 'center',
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff', 
+          headerTitleAlign: 'center',
         }}
       />
     </Stack.Navigator>
@@ -49,7 +51,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-      <Drawer.Navigator
+        <Drawer.Navigator
           screenOptions={{
             drawerStyle: {
               backgroundColor: '#228B22',
@@ -58,22 +60,22 @@ export default function App() {
             drawerContentStyle: {
               backgroundColor: '#228B22',
             },
-            drawerInactiveTintColor: '#ffffff', 
-            drawerActiveTintColor: '#ffffff', 
+            drawerInactiveTintColor: '#ffffff',
+            drawerActiveTintColor: '#ffffff',
           }}
         >
           <Drawer.Screen
             name="HomeStack"
             options={{
               drawerLabel: "Homepage",
-              title: "FutScore", 
+              title: "FutScore",
               headerTitleAlign: 'center',
               headerStyle: { backgroundColor: '#228B22' },
               drawerIcon: () => (
                 <SimpleLineIcons name="home" size={20} color="#ffffff" />
               ),
-              drawerLabelStyle: { color: '#ffffff' }, 
-              headerTintColor: '#ffffff', 
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
             }}
             component={HomeStack}
           />
@@ -85,10 +87,10 @@ export default function App() {
               headerTitleAlign: 'center',
               headerStyle: { backgroundColor: '#228B22' },
               drawerIcon: () => (
-                <MaterialIcons name="login" size={20} color="#808080" />
+                <MaterialIcons name="person" size={20} color="#ffffff" />
               ),
-              drawerLabelStyle: { color: '#ffffff' }, 
-              headerTintColor: '#ffffff', 
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
             }}
             component={Perfil}
           />
@@ -100,10 +102,10 @@ export default function App() {
               headerTitleAlign: 'center',
               headerStyle: { backgroundColor: '#228B22' },
               drawerIcon: () => (
-                <MaterialIcons name="login" size={20} color="#808080" />
+                <MaterialIcons name="login" size={20} color="#ffffff" />
               ),
-              drawerLabelStyle: { color: '#ffffff' }, 
-              headerTintColor: '#ffffff', 
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
             }}
             component={LoginScreen}
           />
@@ -115,12 +117,27 @@ export default function App() {
               headerTitleAlign: 'center',
               headerStyle: { backgroundColor: '#228B22' },
               drawerIcon: () => (
-                <MaterialCommunityIcons name="account-plus" size={20} color="#808080" />
+                <MaterialCommunityIcons name="account-plus" size={20} color="#ffffff" />
               ),
-              drawerLabelStyle: { color: '#ffffff' }, 
-              headerTintColor: '#ffffff', 
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
             }}
             component={Cadastro}
+          />
+          <Drawer.Screen
+            name="StatsTable"
+            options={{
+              drawerLabel: "Serie A",
+              title: "Futscore",
+              headerTitleAlign: 'center',
+              headerStyle: { backgroundColor: '#228B22' },
+              drawerIcon: () => (
+                <MaterialIcons name="assessment" size={20} color="#ffffff" />
+              ),
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
+            }}
+            component={StatsTable}
           />
         </Drawer.Navigator>
       </NavigationContainer>
