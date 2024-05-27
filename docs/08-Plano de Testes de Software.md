@@ -13,7 +13,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Requisito Associado | RF-02 O aplicativo deve exibir tabelas das competições |
 | Objetivo do Teste 	| Verificar se o usuário consegue ver as tabelas dos campeonatos. |
 | Passos 	| - Acessar o aplicativo <br> - Acessar a pagina Home <br> - Tabelas <br> |
-|Critério de Êxito | - O acesso a tabelas não foi realizada. |
+|Critério de Êxito | - O acesso a tabelas foi realizada. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Estatísticas do jogo**	|
 |Requisito Associado | RF-03 O aplicativo deve exibir estatísticas dos jogos das competições |
