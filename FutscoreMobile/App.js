@@ -13,6 +13,7 @@ import LoginScreen from "./src/Pages/Login";
 import Estatisticas from "./src/Pages/Estatisticas";
 import Perfil from "./src/Pages/Perfil";
 import StatsTable from "./src/Pages/SerieA";
+import CopadoBrasil from "./src/Pages/CopadoBrasil";
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -138,6 +139,21 @@ export default function App() {
               headerTintColor: '#ffffff',
             }}
             component={StatsTable}
+          />
+          <Drawer.Screen
+            name="CopadoBrasil"
+            options={{
+              drawerLabel: "Copa do Brasil",
+              title: "Futscore",
+              headerTitleAlign: 'center',
+              headerStyle: { backgroundColor: '#228B22' },
+              drawerIcon: () => (
+                <MaterialIcons name="assessment" size={20} color="#ffffff" />
+              ),
+              drawerLabelStyle: { color: '#ffffff' },
+              headerTintColor: '#ffffff',
+            }}
+            component={CopadoBrasil}
           />
         </Drawer.Navigator>
       </NavigationContainer>
