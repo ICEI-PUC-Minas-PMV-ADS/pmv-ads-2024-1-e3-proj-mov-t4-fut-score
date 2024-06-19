@@ -1,17 +1,37 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, Button, SafeAreaView, Text, TouchableOpacity } from 'react-native';
+import React, { useState, useContext } from 'react';
+import { StyleSheet, View, TextInput, Button, SafeAreaView, Text, TouchableOpacity, Alert } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import AuthContext from '../../AuthContext';
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { login } = useContext(AuthContext);
 
-  const handleLogin = () => {
-    // Aqui você pode adicionar a lógica de autenticação
-    console.log('Email:', email, 'Password:', password);
+  const handleLogin = async () => {
+    try {
+      const userData = await AsyncStorage.getItem('user');
+      if (userData) {
+        const user = JSON.parse(userData);
+        if (user.email === email && user.password === password) {
+          Alert.alert('Logado com sucesso!', `Bem-vindo de volta, ${user.name}!`);
+          await AsyncStorage.setItem('logged', 'true');
+          await login(); // Update the context state
+          // Navigate to the home page or another screen
+          navigation.navigate('HomeStack');
+        } else {
+          Alert.alert('Login Falhou', 'Email ou senha inválido');
+        }
+      } else {
+        Alert.alert('Login Falhou', 'Email ou senha inválido');
+      }
+    } catch (error) {
+      Alert.alert('Login Falhou', 'Um erro ocorreu, tente novamente');
+    }
   };
 
   const handleNavigateToSignUp = () => {
-    navigation.navigate('Cadastro'); // Navega para a tela de cadastro
+    navigation.navigate('Cadastro');
   };
 
   return (
@@ -35,7 +55,7 @@ const LoginScreen = ({ navigation }) => {
         <Button
           title="Entrar"
           onPress={handleLogin}
-          color="#000" // Define a cor do botão para preto
+          color="#000"
         />
         <TouchableOpacity onPress={handleNavigateToSignUp}>
           <Text style={styles.signUpText}>Não tem uma conta? Cadastrar</Text>

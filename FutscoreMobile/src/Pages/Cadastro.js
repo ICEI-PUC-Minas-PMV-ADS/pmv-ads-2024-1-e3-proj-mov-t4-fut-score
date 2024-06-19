@@ -1,14 +1,30 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, SafeAreaView, Text } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Cadastro = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigation = useNavigation();
 
-  const handleSignup = () => {
-    // Aqui você pode adicionar a lógica de cadastro
-    console.log('Nome:', name, 'Email:', email, 'Senha:', password);
+  const handleSignup = async () => {
+    try {
+      // Save user data to local storage
+      const user = { name, email, password };
+      await AsyncStorage.setItem('user', JSON.stringify(user));
+      Alert.alert('Cadastrado com sucesso!');
+
+      // Navigate to the Login page
+      navigation.navigate('Login');
+    } catch (error) {
+      console.error('Failed to save user data', error);
+    }
+  };
+
+  const handleNavigateToLogin = () => {
+    navigation.navigate('Login');
   };
 
   return (
@@ -37,6 +53,9 @@ const Cadastro = () => {
         />
         <TouchableOpacity style={styles.button} onPress={handleSignup}>
           <Text style={styles.buttonText}>Cadastrar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleNavigateToLogin}>
+          <Text style={styles.loginText}>Já tem uma conta? Entre</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -83,6 +102,12 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     textAlign: 'center',
+  },
+  loginText: {
+    marginTop: 20,
+    color: '#228B22', 
+    textAlign: 'center',
+    textDecorationLine: 'underline',
   },
 });
 
