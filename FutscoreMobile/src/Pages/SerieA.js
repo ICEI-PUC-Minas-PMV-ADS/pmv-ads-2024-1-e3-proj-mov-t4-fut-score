@@ -3,7 +3,7 @@ import { View, StyleSheet, FlatList, Image, Text } from 'react-native';
 import { DataTable } from 'react-native-paper';
 
 const SerieA = [
-  { team: 'Alético Paranaense', games: 6, wins: 4, draws: 1, losses: 1, points: 13, logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_96x96.png' },
+  { team: 'Alético Paranaense', games: 6, wins: 4, draws: 1, losses: 1, points: 13, logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9LkdBR4L5plovKM8eIy7nQ_48x48.png' },
   { team: 'Bahia', games: 6, wins: 4, draws: 1, losses: 1, points: 13, logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png' },
   { team: 'Flamengo', games: 6, wins: 3, draws: 2, losses: 1, points: 11, logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
   { team: 'Botafogo', games: 6, wins: 3, draws: 1, losses: 2, points: 10, logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png' },
@@ -30,12 +30,12 @@ const StatsTable = () => {
     <View style={styles.container}>
       <DataTable>
         <DataTable.Header>
-          <DataTable.Title>Clube</DataTable.Title>
-          <DataTable.Title numeric>PJ</DataTable.Title>
-          <DataTable.Title numeric>VIT</DataTable.Title>
-          <DataTable.Title numeric>EMP</DataTable.Title>
-          <DataTable.Title numeric>DER</DataTable.Title>
-          <DataTable.Title numeric>Pts</DataTable.Title>
+          <DataTable.Title style={styles.clubColumn}>Clube</DataTable.Title>
+          <DataTable.Title style={styles.compactColumn} numeric>PJ</DataTable.Title>
+          <DataTable.Title style={styles.compactColumn} numeric>VIT</DataTable.Title>
+          <DataTable.Title style={styles.compactColumn} numeric>EMP</DataTable.Title>
+          <DataTable.Title style={styles.compactColumn} numeric>DER</DataTable.Title>
+          <DataTable.Title style={styles.compactColumn} numeric>Pts</DataTable.Title>
         </DataTable.Header>
         <FlatList
           data={SerieA}
@@ -44,13 +44,13 @@ const StatsTable = () => {
             <DataTable.Row>
               <DataTable.Cell style={styles.teamCell}>
                 <Image style={styles.logo} source={{ uri: item.logoUrl }} onError={() => console.log(`Error loading image for ${item.team}`)} />
-                <Text>{item.team}</Text>
+                <Text style={styles.teamText} numberOfLines={1} ellipsizeMode="tail">{item.team}</Text>
               </DataTable.Cell>
-              <DataTable.Cell numeric>{item.games}</DataTable.Cell>
-              <DataTable.Cell numeric>{item.wins}</DataTable.Cell>
-              <DataTable.Cell numeric>{item.draws}</DataTable.Cell>
-              <DataTable.Cell numeric>{item.losses}</DataTable.Cell>
-              <DataTable.Cell numeric>{item.points}</DataTable.Cell>
+              <DataTable.Cell style={styles.compactColumn} numeric>{item.games}</DataTable.Cell>
+              <DataTable.Cell style={styles.compactColumn} numeric>{item.wins}</DataTable.Cell>
+              <DataTable.Cell style={styles.compactColumn} numeric>{item.draws}</DataTable.Cell>
+              <DataTable.Cell style={styles.compactColumn} numeric>{item.losses}</DataTable.Cell>
+              <DataTable.Cell style={styles.compactColumn} numeric>{item.points}</DataTable.Cell>
             </DataTable.Row>
           )}
         />
@@ -62,18 +62,28 @@ const StatsTable = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    padding: 8,
     backgroundColor: '#fff',
   },
   teamCell: {
     flexDirection: 'row',
     alignItems: 'center',
-    flex: 3,
+    flex: 5,
   },
   logo: {
     width: 14,
     height: 14,
-    marginRight: 5,
+    marginRight: 4,
+  },
+  teamText: {
+    flex: 1,
+    flexWrap: 'wrap',
+  },
+  clubColumn: {
+    flex: 5,
+  },
+  compactColumn: {
+    flex: 0.9,
   },
 });
 
