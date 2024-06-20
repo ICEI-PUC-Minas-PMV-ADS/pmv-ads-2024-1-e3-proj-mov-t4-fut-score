@@ -3,11 +3,11 @@ import { View, StyleSheet, Text, TouchableOpacity, Image, ScrollView } from 'rea
 
 const placeholderLogoUrl = 'https://via.placeholder.com/40';
 
-const CopadoBrasil = ({ navigation }) => {
+const Libertadores = ({ navigation }) => {
   const [selectedDateIndex, setSelectedDateIndex] = useState(0);
 
   const handleNextDate = () => {
-    if (selectedDateIndex < copaDoBrasilStages.length - 1) {
+    if (selectedDateIndex < libertadoresStages.length - 1) {
       setSelectedDateIndex(selectedDateIndex + 1);
     }
   };
@@ -18,7 +18,7 @@ const CopadoBrasil = ({ navigation }) => {
     }
   };
 
-  const copaDoBrasilStages = [
+  const libertadoresStages = [
     {
       date: 'SEMANA 31/07',
       round: 'OITAVAS-DE-FINAL',
@@ -74,20 +74,20 @@ const CopadoBrasil = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.banner}>
-        <Text style={styles.bannerText}>Copa do Brasil</Text>
+        <Text style={styles.bannerText}>Libertadores</Text>
       </View>
       <View style={styles.dateNavigation}>
         <TouchableOpacity onPress={handlePreviousDate}>
           <Text style={styles.navigationButton}>{'<'}</Text>
         </TouchableOpacity>
-        <Text style={styles.dateText}>{copaDoBrasilStages[selectedDateIndex].date}</Text>
+        <Text style={styles.dateText}>{libertadoresStages[selectedDateIndex].date}</Text>
         <TouchableOpacity onPress={handleNextDate}>
           <Text style={styles.navigationButton}>{'>'}</Text>
         </TouchableOpacity>
       </View>
       <ScrollView style={styles.stageContainer}>
-        <Text style={styles.roundTitle}>{copaDoBrasilStages[selectedDateIndex].round}</Text>
-        {copaDoBrasilStages[selectedDateIndex].matches.map((match, index) => (
+        <Text style={styles.roundTitle}>{libertadoresStages[selectedDateIndex].round}</Text>
+        {libertadoresStages[selectedDateIndex].matches.map((match, index) => (
           <View key={index} style={styles.matchContainer}>
             <GameCard
               homeTeam={match.homeTeam}
@@ -108,7 +108,6 @@ const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
     <TouchableOpacity onPress={() => navigation.navigate('Estatisticas', { homeTeam, awayTeam, homeScore, awayScore })}>
       <View style={styles.card}>
         <View style={styles.teamContainer}>
-            {/* Para alterar time da casa*/}
           <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
           <Text style={styles.teamName}>{homeTeam.name}</Text>
         </View>
@@ -116,7 +115,6 @@ const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
           {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
         </Text>
         <View style={styles.teamContainer}>
-          {/* Para alterar time de fora */}
           <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
           <Text style={styles.teamName}>{awayTeam.name}</Text>
         </View>
@@ -131,7 +129,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   banner: {
-    backgroundColor: '#228B22',
+    backgroundColor: '#0033a0',
     paddingVertical: 10,
     alignItems: 'center',
     marginBottom: 10,
@@ -200,4 +198,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CopadoBrasil;
+export default Libertadores;
