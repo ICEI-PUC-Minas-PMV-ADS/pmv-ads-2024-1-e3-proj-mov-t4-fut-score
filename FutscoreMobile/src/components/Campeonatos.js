@@ -10,7 +10,6 @@ const Campeonatos = () => {
             <Text style={styles.title}>Campeonatos</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={false}>
                 <View style={styles.campeonatos}>
-
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('StatsTable')}>
                         <View style={styles.campeonatosWrapper}>
                             <Image style={styles.images} source={{ uri: 'https://api.api-futebol.com.br/images/competicao/brasileiro-seriea.png' }} />
@@ -29,13 +28,13 @@ const Campeonatos = () => {
                             <Text>Copa do Brasil</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Libertadores')}>
                         <View style={styles.campeonatosWrapper}>
                             <Image style={styles.images} source={{ uri: 'https://api.api-futebol.com.br/images/competicao/libertadores.png' }} />
                             <Text>Libertadores</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Sulamericana')}>
                         <View style={styles.campeonatosWrapper}>
                             <Image style={styles.images} source={{ uri: 'https://api.api-futebol.com.br/images/competicao/sulamericana.png' }} />
                             <Text>Sulamericana</Text>
@@ -44,7 +43,7 @@ const Campeonatos = () => {
                 </View>
             </ScrollView>
         </SafeAreaView>
-    )
+    );
 }
 
 const styles = StyleSheet.create({

@@ -20,62 +20,221 @@ const Libertadores = ({ navigation }) => {
 
   const libertadoresStages = [
     {
-      date: 'SEMANA 31/07',
-      round: 'OITAVAS-DE-FINAL',
-      matches: Array(8).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        homeScore: null,
-        awayScore: null,
-      }),
+      date: 'OITAVAS-DE-FINAL IDA',
+      matches: [
+        {
+          date: '13/08',
+          time: '19:00',
+          homeTeam: { name: 'Grêmio',logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png' },
+          awayTeam: { name: 'Fluminense', logoUrl:'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '13/08',
+          time: '21:30',
+          homeTeam: { name: 'Colo-Colo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/cEY0fDx48kkZOPpbK_Bhsg_48x48.png' },
+          awayTeam: { name: 'Junior', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/yAhh9CCI7x9DAyQkRJrouA_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '13/08',
+          time: '21:30',
+          homeTeam: { name: 'San Lorenzo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/3guH9PUqsLcUw9o8VBhAlw_48x48.png' },
+          awayTeam: { name: 'Atlético-MG', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '14/08',
+          time: '19:00',
+          homeTeam: { name: 'Peñarol', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/dO-HNzx-ozLofoWOj7kr9g_48x48.png' },
+          awayTeam: { name: 'The Strongest', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/n7PctzbrK3SsQvI81bU9DA_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '14/08',
+          time: '21:30',
+          homeTeam: { name: 'Talleres', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/MW12yOtJtAqfvt7JKt4iUg_48x48.png' },
+          awayTeam: { name: 'River Plate', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/700Mj6lUNkbBdvOVEbjC3g_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '14/08',
+          time: '21:30',
+          homeTeam: { name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png' },
+          awayTeam: { name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '15/08',
+          time: '19:00',
+          homeTeam: { name: 'Nacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Uql1qECWH5pRMbm5UVsjPg_48x48.png' },
+          awayTeam: { name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '15/08',
+          time: '21:30',
+          homeTeam: { name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
+          awayTeam: { name: 'Bolivar', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9205ld_2yc8dZSaWBtIsWg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+      ],
     },
     {
-      date: 'SEMANA 07/08',
-      round: 'OITAVAS-DE-FINAL',
-      matches: Array(8).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        homeScore: null,
-        awayScore: null,
-      }),
+      date: 'OITAVAS-DE-FINAL VOLTA',
+      matches: [
+        {
+          date: '20/08',
+          time: '19:00',
+          homeTeam: { name: 'Fluminense',logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png' },
+          awayTeam: { name: 'Grêmio', logoUrl:'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '20/08',
+          time: '21:30',
+          homeTeam: { name: 'Junior', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/yAhh9CCI7x9DAyQkRJrouA_48x48.png' },
+          awayTeam: { name: 'Colo-Colo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/cEY0fDx48kkZOPpbK_Bhsg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '20/08',
+          time: '21:30',
+          homeTeam: { name: 'Atlético-MG', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png' },
+          awayTeam: { name: 'San Lorenzo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/3guH9PUqsLcUw9o8VBhAlw_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '21/08',
+          time: '19:00',
+          homeTeam: { name: 'The Strongest', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/n7PctzbrK3SsQvI81bU9DA_48x48.png' },
+          awayTeam: { name: 'Peñarol', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/dO-HNzx-ozLofoWOj7kr9g_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '21/08',
+          time: '21:30',
+          homeTeam: { name: 'River Plate', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/700Mj6lUNkbBdvOVEbjC3g_48x48.png' },
+          awayTeam: { name: 'Talleres', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/MW12yOtJtAqfvt7JKt4iUg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '21/08',
+          time: '21:30',
+          homeTeam: { name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png' },
+          awayTeam: { name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '22/08',
+          time: '19:00',
+          homeTeam: { name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png' },
+          awayTeam: { name: 'Nacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Uql1qECWH5pRMbm5UVsjPg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: '22/08',
+          time: '21:30',
+          homeTeam: { name: 'Bolivar', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9205ld_2yc8dZSaWBtIsWg_48x48.png' },
+          awayTeam: { name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
+          homeScore: null,
+          awayScore: null,
+        },
+      ],
     },
     {
       date: 'A DEFINIR',
       round: 'QUARTAS-DE-FINAL',
-      matches: Array(4).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        homeScore: null,
-        awayScore: null,
-      }),
+      matches: [
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+      ],
     },
     {
       date: 'A DEFINIR',
       round: 'SEMI-FINAL',
-      matches: Array(2).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        homeScore: null,
-        awayScore: null,
-      }),
+      matches: [
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+      ],
     },
     {
       date: 'A DEFINIR',
       round: 'FINAL',
-      matches: Array(1).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        homeScore: null,
-        awayScore: null,
-      }),
+      matches: [
+        {
+          date: 'A DEFINIR',
+          time: 'A DEFINIR',
+          homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+          homeScore: null,
+          awayScore: null,
+        },
+      ],
     },
   ];
 
   return (
     <View style={styles.container}>
-      <View style={styles.banner}>
-        <Text style={styles.bannerText}>Libertadores</Text>
-      </View>
       <View style={styles.dateNavigation}>
         <TouchableOpacity onPress={handlePreviousDate}>
           <Text style={styles.navigationButton}>{'<'}</Text>
@@ -90,6 +249,8 @@ const Libertadores = ({ navigation }) => {
         {libertadoresStages[selectedDateIndex].matches.map((match, index) => (
           <View key={index} style={styles.matchContainer}>
             <GameCard
+              date={match.date}
+              time={match.time}
               homeTeam={match.homeTeam}
               awayTeam={match.awayTeam}
               homeScore={match.homeScore}
@@ -103,13 +264,19 @@ const Libertadores = ({ navigation }) => {
   );
 };
 
-const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
+const GameCard = ({ date, time, homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
   return (
     <TouchableOpacity onPress={() => navigation.navigate('Estatisticas', { homeTeam, awayTeam, homeScore, awayScore })}>
       <View style={styles.card}>
-        <View style={styles.teamContainer}>
-          <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
-          <Text style={styles.teamName}>{homeTeam.name}</Text>
+        <View style={styles.topRow}>
+          <View style={styles.dateTimeContainer}>
+            <Text style={styles.dateText}>{date}</Text>
+            <Text style={styles.timeText}>{time}</Text>
+          </View>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{homeTeam.name}</Text>
+          </View>
         </View>
         <Text style={styles.score}>
           {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
@@ -127,17 +294,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  banner: {
-    backgroundColor: '#0033a0',
-    paddingVertical: 10,
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-  bannerText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#fff',
   },
   dateNavigation: {
     flexDirection: 'row',
@@ -178,6 +334,22 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#ccc',
+    position: 'relative',
+  },
+  topRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  dateTimeContainer: {
+    marginRight: 10,
+  },
+  dateText: {
+    fontSize: 12,
+    color: '#000',
+  },
+  timeText: {
+    fontSize: 12,
+    color: '#000',
   },
   teamContainer: {
     alignItems: 'center',

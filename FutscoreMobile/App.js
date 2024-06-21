@@ -14,8 +14,9 @@ import Estatisticas from "./src/Pages/Estatisticas";
 import Perfil from "./src/Pages/Perfil";
 import StatsTable from "./src/Pages/SerieA";
 import CopadoBrasil from "./src/Pages/CopadoBrasil";
-
+import Libertadores from "./src/Pages/Libertadores";
 import AuthContext, { AuthProvider } from './AuthContext';
+import Sulamericana from "./src/Pages/Sulamericana";
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -43,6 +44,42 @@ function HomeStack({ navigation }) {
         options={{
           headerStyle: { backgroundColor: '#228B22' },
           headerTintColor: '#fff', 
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="StatsTable"
+        component={StatsTable}
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="CopadoBrasil"
+        component={CopadoBrasil}
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="Libertadores"
+        component={Libertadores}
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="Sulamericana"
+        component={Sulamericana}
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff',
           headerTitleAlign: 'center',
         }}
       />
@@ -108,6 +145,18 @@ function CustomDrawerContent(props) {
       <DrawerItem
         label="Copa do Brasil"
         onPress={() => navigation.navigate('CopadoBrasil')}
+        icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
+        labelStyle={{ color: '#ffffff' }}
+      />
+      <DrawerItem
+        label="Libertadores"
+        onPress={() => navigation.navigate('Libertadores')}
+        icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
+        labelStyle={{ color: '#ffffff' }}
+      />
+      <DrawerItem
+        label="Sulamericana"
+        onPress={() => navigation.navigate('Sulamericana')}
         icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
         labelStyle={{ color: '#ffffff' }}
       />
@@ -199,6 +248,28 @@ export default function App() {
                 headerTintColor: '#ffffff',
               }}
               component={CopadoBrasil}
+            />
+            <Drawer.Screen
+              name="Libertadores"
+              options={{
+                drawerLabel: "Libertadores",
+                title: "Futscore",
+                headerTitleAlign: 'center',
+                headerStyle: { backgroundColor: '#228B22' },
+                headerTintColor: '#ffffff',
+              }}
+              component={Libertadores}
+            />
+            <Drawer.Screen
+              name="Sulamericana"
+              options={{
+                drawerLabel: "Sulamericana",
+                title: "Futscore",
+                headerTitleAlign: 'center',
+                headerStyle: { backgroundColor: '#228B22' },
+                headerTintColor: '#ffffff',
+              }}
+              component={Sulamericana}
             />
           </Drawer.Navigator>
         </NavigationContainer>

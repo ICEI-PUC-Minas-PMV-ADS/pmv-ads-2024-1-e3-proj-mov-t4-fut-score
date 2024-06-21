@@ -73,9 +73,6 @@ const CopadoBrasil = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.banner}>
-        <Text style={styles.bannerText}>Copa do Brasil</Text>
-      </View>
       <View style={styles.dateNavigation}>
         <TouchableOpacity onPress={handlePreviousDate}>
           <Text style={styles.navigationButton}>{'<'}</Text>

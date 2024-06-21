@@ -32,7 +32,7 @@ const Homepage = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Campeonatos />
+        <Campeonatos navigation={navigation} />
         <FlatList
           data={games}
           keyExtractor={(item, index) => index.toString()}
