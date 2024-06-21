@@ -17,6 +17,8 @@ import CopadoBrasil from "./src/Pages/CopadoBrasil";
 import Libertadores from "./src/Pages/Libertadores";
 import AuthContext, { AuthProvider } from './AuthContext';
 import Sulamericana from "./src/Pages/Sulamericana";
+import MeuTime from "./src/Pages/Perfil";
+import SerieBTable from "./src/Pages/SerieB";
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -75,8 +77,17 @@ function HomeStack({ navigation }) {
         }}
       />
       <Stack.Screen
-        name="Sulamericana"
-        component={Sulamericana}
+        name="Perfil"
+        component={MeuTime}
+        options={{
+          headerStyle: { backgroundColor: '#228B22' },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+        }}
+      />
+      <Stack.Screen
+        name="Série B" 
+        component={SerieBTable}
         options={{
           headerStyle: { backgroundColor: '#228B22' },
           headerTintColor: '#fff',
@@ -137,6 +148,13 @@ function CustomDrawerContent(props) {
         </>
       )}
       <DrawerItem
+        label="Perfil"
+        onPress={() => navigation.navigate('Perfil')}
+        icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
+        labelStyle={{ color: '#ffffff' }}
+      />
+      {/*
+      <DrawerItem
         label="Serie A"
         onPress={() => navigation.navigate('StatsTable')}
         icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
@@ -154,12 +172,13 @@ function CustomDrawerContent(props) {
         icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
         labelStyle={{ color: '#ffffff' }}
       />
-      <DrawerItem
-        label="Sulamericana"
-        onPress={() => navigation.navigate('Sulamericana')}
+       <DrawerItem
+        {/* label="Série B" 
+        onPress={() => navigation.navigate('SerieBTable')}
         icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
         labelStyle={{ color: '#ffffff' }}
-      />
+      /> 
+      */}
     </DrawerContentScrollView>
   );
 }
@@ -228,7 +247,7 @@ export default function App() {
               component={Cadastro}
             />
             <Drawer.Screen
-              name="StatsTable"
+              name="Brasileirão"
               options={{
                 drawerLabel: "Serie A",
                 title: "Futscore",
@@ -270,6 +289,17 @@ export default function App() {
                 headerTintColor: '#ffffff',
               }}
               component={Sulamericana}
+            />
+             <Drawer.Screen
+              name="SerieBTable"
+              options={{
+                drawerLabel: "Série B", // Nome da tela na gaveta
+                title: "FutScore",
+                headerTitleAlign: 'center',
+                headerStyle: { backgroundColor: '#228B22' },
+                headerTintColor: '#ffffff',
+              }}
+              component={SerieBTable}
             />
           </Drawer.Navigator>
         </NavigationContainer>

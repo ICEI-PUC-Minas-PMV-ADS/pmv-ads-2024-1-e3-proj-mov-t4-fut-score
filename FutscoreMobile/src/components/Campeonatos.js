@@ -5,10 +5,14 @@ import { useNavigation } from '@react-navigation/native';
 const Campeonatos = () => {
     const navigation = useNavigation();
 
+    const navigateToSerieB = () => {
+        navigation.navigate('SerieBTable');
+    };
+
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.title}>Campeonatos</Text>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} pagingEnabled={false}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} pagingEnabled={false}>
                 <View style={styles.campeonatos}>
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('StatsTable')}>
                         <View style={styles.campeonatosWrapper}>
@@ -16,7 +20,7 @@ const Campeonatos = () => {
                             <Text>Brasileirão</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={navigateToSerieB}>
                         <View style={styles.campeonatosWrapper}>
                             <Image style={styles.images} source={{ uri: 'https://api.api-futebol.com.br/images/competicao/brasileiro-serieb.png' }} />
                             <Text>Serie B</Text>

@@ -74,19 +74,20 @@ const CopadoBrasil = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.dateNavigation}>
-        <TouchableOpacity onPress={handlePreviousDate}>
-          <Text style={styles.navigationButton}>{'<'}</Text>
+        <TouchableOpacity onPress={handlePreviousDate} disabled={selectedDateIndex === 0}>
+          <Text style={[styles.navigationText, selectedDateIndex === 0 && styles.disabledText]}>Voltar</Text>
         </TouchableOpacity>
         <Text style={styles.dateText}>{copaDoBrasilStages[selectedDateIndex].date}</Text>
-        <TouchableOpacity onPress={handleNextDate}>
-          <Text style={styles.navigationButton}>{'>'}</Text>
+        <TouchableOpacity onPress={handleNextDate} disabled={selectedDateIndex === copaDoBrasilStages.length - 1}>
+          <Text style={[styles.navigationText, selectedDateIndex === copaDoBrasilStages.length - 1 && styles.disabledText]}>Próxima</Text>
         </TouchableOpacity>
       </View>
       <ScrollView style={styles.stageContainer}>
-        <Text style={styles.roundTitle}>{copaDoBrasilStages[selectedDateIndex].round}</Text>
         {copaDoBrasilStages[selectedDateIndex].matches.map((match, index) => (
           <View key={index} style={styles.matchContainer}>
             <GameCard
+              date={match.date}
+              time={match.time}
               homeTeam={match.homeTeam}
               awayTeam={match.awayTeam}
               homeScore={match.homeScore}
@@ -100,22 +101,25 @@ const CopadoBrasil = ({ navigation }) => {
   );
 };
 
-const GameCard = ({ homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
+const GameCard = ({ date, time, homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
   return (
     <TouchableOpacity onPress={() => navigation.navigate('Estatisticas', { homeTeam, awayTeam, homeScore, awayScore })}>
       <View style={styles.card}>
-        <View style={styles.teamContainer}>
-            {/* Para alterar time da casa*/}
-          <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
-          <Text style={styles.teamName}>{homeTeam.name}</Text>
+        <View style={styles.topRow}>
+          <Text style={styles.dateTimeText}>{time} - {date}</Text>
         </View>
-        <Text style={styles.score}>
-          {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
-        </Text>
-        <View style={styles.teamContainer}>
-          {/* Para alterar time de fora */}
-          <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
-          <Text style={styles.teamName}>{awayTeam.name}</Text>
+        <View style={styles.matchDetails}>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{homeTeam.name}</Text>
+          </View>
+          <Text style={styles.score}>
+            {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
+          </Text>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{awayTeam.name}</Text>
+          </View>
         </View>
       </View>
     </TouchableOpacity>
@@ -127,17 +131,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  banner: {
-    backgroundColor: '#228B22',
-    paddingVertical: 10,
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-  bannerText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
   dateNavigation: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -145,10 +138,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginBottom: 10,
   },
-  navigationButton: {
+  navigationText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#000000',
+  },
+  disabledText: {
+    opacity: 0.5,
   },
   dateText: {
     fontSize: 18,
@@ -159,24 +155,31 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     flex: 1,
   },
-  roundTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    color: '#000000',
-  },
   matchContainer: {
     marginBottom: 10,
   },
   card: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
     backgroundColor: '#f0f0f0',
-    padding: 10,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#ccc',
+  },
+  topRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    marginBottom: 10,
+  },
+  dateTimeText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000000',
+  },
+  matchDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   teamContainer: {
     alignItems: 'center',
@@ -185,7 +188,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    marginRight: 5,
+    marginRight: 10,
   },
   teamName: {
     fontSize: 16,

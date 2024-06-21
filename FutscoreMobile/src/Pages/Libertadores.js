@@ -235,33 +235,32 @@ const Libertadores = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.dateNavigation}>
-        <TouchableOpacity onPress={handlePreviousDate}>
-          <Text style={styles.navigationButton}>{'<'}</Text>
-        </TouchableOpacity>
-        <Text style={styles.dateText}>{libertadoresStages[selectedDateIndex].date}</Text>
-        <TouchableOpacity onPress={handleNextDate}>
-          <Text style={styles.navigationButton}>{'>'}</Text>
-        </TouchableOpacity>
-      </View>
-      <ScrollView style={styles.stageContainer}>
-        <Text style={styles.roundTitle}>{libertadoresStages[selectedDateIndex].round}</Text>
-        {libertadoresStages[selectedDateIndex].matches.map((match, index) => (
-          <View key={index} style={styles.matchContainer}>
-            <GameCard
-              date={match.date}
-              time={match.time}
-              homeTeam={match.homeTeam}
-              awayTeam={match.awayTeam}
-              homeScore={match.homeScore}
-              awayScore={match.awayScore}
-              navigation={navigation}
-            />
-          </View>
-        ))}
-      </ScrollView>
+    <View style={styles.dateNavigation}>
+      <TouchableOpacity onPress={handlePreviousDate} disabled={selectedDateIndex === 0}>
+        <Text style={[styles.navigationText, selectedDateIndex === 0 && styles.disabledText]}>Voltar</Text>
+      </TouchableOpacity>
+      <Text style={styles.dateText}>{libertadoresStages[selectedDateIndex].date}</Text>
+      <TouchableOpacity onPress={handleNextDate} disabled={selectedDateIndex === libertadoresStages.length - 1}>
+        <Text style={[styles.navigationText, selectedDateIndex === libertadoresStages.length - 1 && styles.disabledText]}>Próxima</Text>
+      </TouchableOpacity>
     </View>
-  );
+    <ScrollView style={styles.stageContainer}>
+      {libertadoresStages[selectedDateIndex].matches.map((match, index) => (
+        <View key={index} style={styles.matchContainer}>
+          <GameCard
+            date={match.date}
+            time={match.time}
+            homeTeam={match.homeTeam}
+            awayTeam={match.awayTeam}
+            homeScore={match.homeScore}
+            awayScore={match.awayScore}
+            navigation={navigation}
+          />
+        </View>
+      ))}
+    </ScrollView>
+  </View>
+);
 };
 
 const GameCard = ({ date, time, homeTeam, awayTeam, homeScore, awayScore, navigation }) => {
@@ -269,21 +268,20 @@ const GameCard = ({ date, time, homeTeam, awayTeam, homeScore, awayScore, naviga
     <TouchableOpacity onPress={() => navigation.navigate('Estatisticas', { homeTeam, awayTeam, homeScore, awayScore })}>
       <View style={styles.card}>
         <View style={styles.topRow}>
-          <View style={styles.dateTimeContainer}>
-            <Text style={styles.dateText}>{date}</Text>
-            <Text style={styles.timeText}>{time}</Text>
-          </View>
+          <Text style={styles.dateTimeText}>{time} - {date}</Text>
+        </View>
+        <View style={styles.matchDetails}>
           <View style={styles.teamContainer}>
             <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
             <Text style={styles.teamName}>{homeTeam.name}</Text>
           </View>
-        </View>
-        <Text style={styles.score}>
-          {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
-        </Text>
-        <View style={styles.teamContainer}>
-          <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
-          <Text style={styles.teamName}>{awayTeam.name}</Text>
+          <Text style={styles.score}>
+            {homeScore !== null && awayScore !== null ? `${homeScore} - ${awayScore}` : 'X'}
+          </Text>
+          <View style={styles.teamContainer}>
+            <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
+            <Text style={styles.teamName}>{awayTeam.name}</Text>
+          </View>
         </View>
       </View>
     </TouchableOpacity>
@@ -307,6 +305,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#000000',
   },
+  disabledText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#000000',
+  },
   dateText: {
     fontSize: 18,
     fontWeight: 'bold',
@@ -326,30 +329,27 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   card: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
     backgroundColor: '#f0f0f0',
-    padding: 10,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#ccc',
-    position: 'relative',
   },
   topRow: {
     flexDirection: 'row',
+    justifyContent: 'flex-start',
+    marginBottom: 10,
+  },
+  dateTimeText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000000',
+  },
+  matchDetails: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-  },
-  dateTimeContainer: {
-    marginRight: 10,
-  },
-  dateText: {
-    fontSize: 12,
-    color: '#000',
-  },
-  timeText: {
-    fontSize: 12,
-    color: '#000',
   },
   teamContainer: {
     alignItems: 'center',
@@ -358,7 +358,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    marginRight: 5,
+    marginRight: 10,
   },
   teamName: {
     fontSize: 16,
