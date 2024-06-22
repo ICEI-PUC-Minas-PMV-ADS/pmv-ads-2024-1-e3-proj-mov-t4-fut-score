@@ -8,22 +8,22 @@ import Campeonatos from '../components/Campeonatos';
 
 const games = [
   {
-    homeTeam: { name: 'CAM', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_96x96.png' },
-    awayTeam: { name: 'FLA', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_96x96.png' },
+    homeTeam: { name: 'VIT', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png' },
+    awayTeam: { name: 'CAM', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png' },
+    homeScore: 4,
+    awayScore: 2,
+  },
+  {
+    homeTeam: { name: 'CRU', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Tcv9X__nIh-6wFNJPMwIXQ_48x48.png' },
+    awayTeam: { name: 'FLU', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png' },
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: { name: 'FLA', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
+    awayTeam: { name: 'BAH', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png' },
     homeScore: 2,
     awayScore: 1,
-  },
-  {
-    homeTeam: { name: 'CRU', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Tcv9X__nIh-6wFNJPMwIXQ_96x96.png' },
-    awayTeam: { name: 'FOR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_96x96.png' },
-    homeScore: 3,
-    awayScore: 3,
-  },
-  {
-    homeTeam: { name: 'COR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png' },
-    awayTeam: { name: 'GRE', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_96x96.png' },
-    homeScore: 0,
-    awayScore: 0,
   },
   // Outros jogos...
 ];
@@ -53,11 +53,11 @@ const Homepage = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Garante que a SafeAreaView ocupa todo o espaço da tela
+    flex: 1, 
   },
   content: {
-    flex: 1, // Permite que o conteúdo abaixo do Header ocupe todo o espaço restante
-    padding: 16, // Adiciona um padding interno ao conteúdo
+    flex: 1, 
+    padding: 16, 
   },
 });
 
