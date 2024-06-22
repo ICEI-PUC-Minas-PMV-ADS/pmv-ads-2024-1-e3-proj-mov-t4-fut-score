@@ -174,10 +174,10 @@ const Estatisticas = ({ route }) => {
         </View>
       </Modal>
 
-      <View style={styles.infoContainer}>
+      {/* <View style={styles.infoContainer}>
         <Text>INFORMAÇÕES</Text>
         <Text>Informações serão mostradas aqui</Text>
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 };
