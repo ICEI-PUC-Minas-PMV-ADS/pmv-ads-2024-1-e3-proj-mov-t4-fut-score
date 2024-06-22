@@ -72,22 +72,22 @@ const Estatisticas = ({ route }) => {
 
       {/* Modal para Classificação */}
       <Modal
-  visible={isClassificacaoVisible}
-  animationType="slide"
-  transparent={true}
-  onRequestClose={() => setClassificacaoVisible(false)}
->
-  <View style={styles.modalContainer}>
-    <View style={styles.modalContent}>
-      <Text style={styles.modalTitle}>Classificação</Text>
-      <Text style={styles.classificationText}>{homeTeam.name} - {homeTeam.classification}</Text>
-      <Text style={styles.classificationText}>{awayTeam.name} - {awayTeam.classification}</Text>
-      <TouchableOpacity onPress={() => setClassificacaoVisible(false)}>
-        <Text style={styles.closeButtonText}>FECHAR</Text>
-      </TouchableOpacity>
-    </View>
-  </View>
-</Modal>
+        visible={isClassificacaoVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setClassificacaoVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>Classificação</Text>
+            <Text style={styles.classificationText}>{homeTeam.name} - {homeTeam.classification}</Text>
+            <Text style={styles.classificationText}>{awayTeam.name} - {awayTeam.classification}</Text>
+            <TouchableOpacity onPress={() => setClassificacaoVisible(false)}>
+            <Text style={styles.closeButtonText}>FECHAR</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
 
       {/* Modal para Estatísticas */}
       <Modal
@@ -98,9 +98,77 @@ const Estatisticas = ({ route }) => {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text>Estatísticas</Text>
-            <TouchableOpacity onPress={() => setEstatisticasVisible(false)}>
-              <Text>FECHAR</Text>
+            <Text style={styles.modalTitle}>Estatísticas</Text>
+
+            {/* Estatística 1 */}
+            <View style={styles.statisticRow}>
+            <Image source={{ uri: homeTeam.logoUrl }} style={styles.teamLogo} />
+            <Image source={{ uri: awayTeam.logoUrl }} style={styles.teamLogo} />
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.chutes}</Text>
+              <Text style={styles.statisticName}>Chutes</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.chutes}</Text>
+            </View>
+
+            {/* Estatística 2 */}
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.chutesAGol}</Text>
+              <Text style={styles.statisticName}>Chutes a Gol</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.chutesAGol}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.posseDeBola}</Text>
+              <Text style={styles.statisticName}>Posse de bola</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.posseDeBola}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.passes}</Text>
+              <Text style={styles.statisticName}>Passes</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.passes}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.precisaoDePasse}</Text>
+              <Text style={styles.statisticName}>Precisão de Passe</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.precisaoDePasse}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.faltas}</Text>
+              <Text style={styles.statisticName}>Faltas</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.faltas}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.cartoesAmarelos}</Text>
+              <Text style={styles.statisticName}>Cartões Amarelos</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.cartoesAmarelos}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.cartoesVermelhos}</Text>
+              <Text style={styles.statisticName}>Cartões Vermelhos</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.cartoesVermelhos}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.impedimentos}</Text>
+              <Text style={styles.statisticName}>Impedimentos</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.impedimentos}</Text>
+            </View>
+
+            <View style={styles.statisticRow}>
+              <Text style={styles.statisticValue}>{homeTeam.statistics.escanteios}</Text>
+              <Text style={styles.statisticName}>Escanteios</Text>
+              <Text style={[styles.statisticValue, { textAlign: 'right' }]}>{awayTeam.statistics.escanteios}</Text>
+            </View>
+            
+            <TouchableOpacity onPress={() => setEstatisticasVisible(false)} style={styles.closeButton}>
+              <Text style={styles.closeButtonText}>FECHAR</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -108,7 +176,7 @@ const Estatisticas = ({ route }) => {
 
       <View style={styles.infoContainer}>
         <Text>INFORMAÇÕES</Text>
-        <Text>Informações será mostrada aqui</Text>
+        <Text>Informações serão mostradas aqui</Text>
       </View>
     </SafeAreaView>
   );
@@ -228,6 +296,25 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontWeight: 'bold',
   },
+  statisticRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    marginBottom: 10,
+  },
+  statisticValue: {
+    flex: 1,
+    fontSize: 16,
+    textAlign: 'left',
+  },
+  statisticName: {
+    flex: 2,
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  
 });
 
 export default Estatisticas;
