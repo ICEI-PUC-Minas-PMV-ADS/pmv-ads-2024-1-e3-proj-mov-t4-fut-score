@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Modal, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Botao from '../components/Button';
 
@@ -48,9 +48,23 @@ const Estatisticas = ({ route }) => {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text>Escalação</Text>
-            <TouchableOpacity onPress={() => setEscalacaoVisible(false)}>
-              <Text>FECHAR</Text>
+            <Text style={styles.modalTitle}>Escalação</Text>
+            <ScrollView>
+              <View style={styles.teamLineup}>
+                <Text style={styles.teamLineupTitle}>{homeTeam.name}</Text>
+                {(homeTeam.players || []).map((player, index) => (
+                  <Text key={index} style={styles.playerName}>{player}</Text>
+                ))}
+              </View>
+              <View style={styles.teamLineup}>
+                <Text style={styles.teamLineupTitle}>{awayTeam.name}</Text>
+                {(awayTeam.players || []).map((player, index) => (
+                  <Text key={index} style={styles.playerName}>{player}</Text>
+                ))}
+              </View>
+            </ScrollView>
+            <TouchableOpacity onPress={() => setEscalacaoVisible(false)} style={styles.closeButton}>
+              <Text style={styles.closeButtonText}>FECHAR</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -72,6 +86,7 @@ const Estatisticas = ({ route }) => {
           </View>
         </View>
       </Modal>
+
       {/* Modal para Estatísticas */}
       <Modal
         visible={isEstatisticasVisible}
@@ -88,12 +103,10 @@ const Estatisticas = ({ route }) => {
           </View>
         </View>
       </Modal>
+
       <View style={styles.infoContainer}>
         <Text>INFORMAÇÕES</Text>
         <Text>Informações será mostrada aqui</Text>
-        <View>
-
-        </View>
       </View>
     </SafeAreaView>
   );
@@ -142,12 +155,12 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'column',
     alignItems: 'center',
-    width: '90%', // Ajuste conforme necessário,
-    marginLeft: 60
+    width: '90%',
+    marginLeft: 60,
   },
   button: {
     width: '90%',
-    marginVertical: 1, // Espaçamento vertical entre os botões
+    marginVertical: 1,
   },
   infoContainer: {
     marginTop: 20,
@@ -174,14 +187,37 @@ const styles = StyleSheet.create({
   modalContent: {
     width: '80%',
     padding: 20,
-    paddingBottom: '50%',
     backgroundColor: 'white',
     borderRadius: 8,
     alignItems: 'center',
-    
-
   },
-
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  teamLineup: {
+    marginBottom: 20,
+  },
+  teamLineupTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  playerName: {
+    fontSize: 14,
+    marginBottom: 2,
+  },
+  closeButton: {
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: '#ddd',
+    borderRadius: 5,
+  },
+  closeButtonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 
 export default Estatisticas;
