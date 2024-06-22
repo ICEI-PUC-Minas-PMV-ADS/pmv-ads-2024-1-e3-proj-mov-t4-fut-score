@@ -147,12 +147,6 @@ function CustomDrawerContent(props) {
           />
         </>
       )}
-      <DrawerItem
-        label="Perfil"
-        onPress={() => navigation.navigate('Perfil')}
-        icon={() => <MaterialIcons name="assessment" size={20} color="#ffffff" />}
-        labelStyle={{ color: '#ffffff' }}
-      />
       {/*
       <DrawerItem
         label="Serie A"
@@ -247,7 +241,7 @@ export default function App() {
               component={Cadastro}
             />
             <Drawer.Screen
-              name="Brasileirão"
+              name="StatsTable"
               options={{
                 drawerLabel: "Serie A",
                 title: "Futscore",
