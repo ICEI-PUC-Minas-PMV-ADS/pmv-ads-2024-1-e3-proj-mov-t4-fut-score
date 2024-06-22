@@ -10,11 +10,13 @@ const games = [
   {
     homeTeam: {
       name: 'VIT',
+      classification:'15º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png',
       players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
     },
     awayTeam: {
       name: 'CAM',
+      classification:'10º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png',
       players: ['22. Everson', '26. R. Saravia', '3. B. Fuchs', '21. R. Battaglia', '47. Rômulo', '45. Alisson', '6. Scarpa', '17. Igor Gomes', '15. F. Zaracho', '38. Pedrinho','42. Cadu', '[T] Gabriel Milito']
     },
@@ -24,11 +26,13 @@ const games = [
   {
     homeTeam: {
       name: 'CRU',
+      classification:'6º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Tcv9X__nIh-6wFNJPMwIXQ_48x48.png',
       players: ['98. Anderson', '12. Willian', '5. Zé Ivaldo', '43. João Marcelo', '3. Marlon', '77. Japa', '22. Vitinho', '17. Ramiro', '11. Arthur Gomes','10. Matheus Pereira', '25. Vilalba', '[T] Fernando Seabra']
     },
     awayTeam: {
       name: 'FLU',
+      classification:'20º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png',
       players: ['1. Fábio', '31. Calegari', '25. Antônio Carlos', '22. Gabriel Pires', '6. Diogo Barbosa', '8. Martinelli', '45. Lima', '80. Terans', '9. John Kennedy', '19. Kauã Elias', '11. Keno','[T] Fernando Diniz']
     },
@@ -38,11 +42,13 @@ const games = [
   {
     homeTeam: {
       name: 'FLA',
+      classification:'1º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png',
       players: ['1. Rossi', '43. Wesley', '23 David Luiz', '4 Léo Pereira', '6 Ayrton Lucas', '3 L. Ortiz', '8 Gerson', '19 Lorran', '7 L. Araújo', '9. Pedro', '11. E. Cebolinha', '[T] Tite']
     },
     awayTeam: {
       name: 'BAH',
+      classification:'5º Lugar',
       logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png',
       players: ['22. Marcos Felipe', '2. Gilberto', '3. Gabriel Xavier', '4. Kanu', '46. Luciano Juba', '19. Caio Alexandre', '6. Jean Lucas', '10. Everton Ribeiro', '8. Cauly', '16. Thaciano', '9. Everaldo', '[T] Rogério Ceni']
     },

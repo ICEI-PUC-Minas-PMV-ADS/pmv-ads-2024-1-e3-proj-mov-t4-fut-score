@@ -72,20 +72,22 @@ const Estatisticas = ({ route }) => {
 
       {/* Modal para Classificação */}
       <Modal
-        visible={isClassificacaoVisible}
-        animationType="slide"
-        transparent={true}
-        onRequestClose={() => setClassificacaoVisible(false)}
-      >
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text>Classificação</Text>
-            <TouchableOpacity onPress={() => setClassificacaoVisible(false)}>
-              <Text>FECHAR</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
+  visible={isClassificacaoVisible}
+  animationType="slide"
+  transparent={true}
+  onRequestClose={() => setClassificacaoVisible(false)}
+>
+  <View style={styles.modalContainer}>
+    <View style={styles.modalContent}>
+      <Text style={styles.modalTitle}>Classificação</Text>
+      <Text style={styles.classificationText}>{homeTeam.name} - {homeTeam.classification}</Text>
+      <Text style={styles.classificationText}>{awayTeam.name} - {awayTeam.classification}</Text>
+      <TouchableOpacity onPress={() => setClassificacaoVisible(false)}>
+        <Text style={styles.closeButtonText}>FECHAR</Text>
+      </TouchableOpacity>
+    </View>
+  </View>
+</Modal>
 
       {/* Modal para Estatísticas */}
       <Modal
@@ -219,6 +221,11 @@ const styles = StyleSheet.create({
   },
   closeButtonText: {
     fontSize: 16,
+    fontWeight: 'bold',
+  },
+  classificationText: {
+    fontSize: 16,
+    marginBottom: 10,
     fontWeight: 'bold',
   },
 });
