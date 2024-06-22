@@ -207,6 +207,9 @@ const styles = StyleSheet.create({
   playerName: {
     fontSize: 14,
     marginBottom: 2,
+    borderBottomWidth: 1,
+    borderColor: '#ccc',
+    paddingBottom: 4,
   },
   closeButton: {
     marginTop: 20,
