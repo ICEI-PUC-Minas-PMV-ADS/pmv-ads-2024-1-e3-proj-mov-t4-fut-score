@@ -25,119 +25,264 @@ const CopadoBrasil = ({ navigation }) => {
         {
           date: '30/04',
           time: '20:00',
-          homeTeam: { name: 'Operário-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/GmLvorr4MqC4aRinQQ4Mdw_48x48.png' },
-          awayTeam: { name: 'Grêmio', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png' },
+          homeTeam: {
+            name: 'Operário-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/GmLvorr4MqC4aRinQQ4Mdw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Grêmio', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 0,
         },
         {
           date: '13/07',
           time: '19:00',
-          homeTeam: { name: 'Grêmio', logoUrl:'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png' },
-          awayTeam: { name: 'Operário-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/GmLvorr4MqC4aRinQQ4Mdw_48x48.png' },
+          homeTeam: {
+            name: 'Grêmio', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Operário-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/GmLvorr4MqC4aRinQQ4Mdw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: null,
           awayScore: null,
         },
         {
           date: '30/04',
           time: '19:00',
-          homeTeam: { name: 'Bahia', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png' },
-          awayTeam: { name: 'Criciúma', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u_L7Mkp33uNmFTv3uUlXeQ_48x48.png' },
+          homeTeam: {
+            name: 'Bahia', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Criciúma', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u_L7Mkp33uNmFTv3uUlXeQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
         {
           date: '23/05',
           time: '19:00',
-          homeTeam: { name: 'Criciúma', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u_L7Mkp33uNmFTv3uUlXeQ_48x48.png' },
-          awayTeam: { name: 'Bahia', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png' },
+          homeTeam: {
+            name: 'Criciúma', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u_L7Mkp33uNmFTv3uUlXeQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Bahia', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 2,
         },
         {
           date: '01/05',
           time: '16:00',
-          homeTeam: { name: 'Sampaio Corrêa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/G52t9iE9YvNjIKh-8xyHGg_48x48.png' },
-          awayTeam: { name: 'Fluminense', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png' },
+          homeTeam: {
+            ame: 'Sampaio Corrêa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/G52t9iE9YvNjIKh-8xyHGg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Fluminense', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 2,
         },
         {
           date: '22/05',
           time: '19:00',
-          homeTeam: { name: 'Fluminense', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png' },
-          awayTeam: { name: 'Sampaio Corrêa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/G52t9iE9YvNjIKh-8xyHGg_48x48.png' },
+          homeTeam: {
+            name: 'Fluminense', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Sampaio Corrêa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/G52t9iE9YvNjIKh-8xyHGg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 0,
         },
         {
           date: '01/05',
           time: '18:00',
-          homeTeam: { name: 'Sousa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/it_YmdpyMaOP8FP2Zqd3Jg_48x48.png' },
-          awayTeam: { name: 'Bragantino', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png' },
+          homeTeam: {
+            name: 'Sousa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/it_YmdpyMaOP8FP2Zqd3Jg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Bragantino', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 1,
         },
         {
           date: '21/05',
           time: '19:30',
-          homeTeam: { name: 'Bragantino', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png' },
-          awayTeam: { name: 'Sousa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/it_YmdpyMaOP8FP2Zqd3Jg_48x48.png' },
+          homeTeam: {
+            name: 'Bragantino', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Sousa', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/it_YmdpyMaOP8FP2Zqd3Jg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 3,
           awayScore: 0,
         },
         {
           date: '02/05',
           time: '21:30',
-          homeTeam: { name: 'Goiás', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/gb8bo2x00XsbvsVp9nGniA_48x48.png' },
-          awayTeam: { name: 'Cuiabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png' },
+          homeTeam: {
+            name: 'Goiás', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/gb8bo2x00XsbvsVp9nGniA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Cuiabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
         {
           date: '23/05',
           time: '19:30',
-          homeTeam: { name: 'Cuiabá', logoUrl:'https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png' },
-          awayTeam: { name: 'Goiás', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/gb8bo2x00XsbvsVp9nGniA_48x48.png' },
+          homeTeam: {
+            name: 'Cuiabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Goiás', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/gb8bo2x00XsbvsVp9nGniA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
         {
           date: '02/05',
           time: '19:00',
-          homeTeam: { name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png' },
-          awayTeam: { name: 'Vitória', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png' },
+          homeTeam: {
+            name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Vitória', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
         {
           date: '22/05',
           time: '19:00',
-          homeTeam: { name: 'Vitória', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png' },
-          awayTeam: { name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png' },
+          homeTeam: {
+            name: 'Vitória', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Botafogo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 2,
         },
         {
           date: '01/05',
           time: '19:00',
-          homeTeam: { name: 'Fortaleza', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png' },
-          awayTeam: { name: 'Vasco', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hHwT8LwRmYCAGxQ-STLxYA_48x48.png' },
+          homeTeam: {
+            name: 'Fortaleza', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Vasco', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hHwT8LwRmYCAGxQ-STLxYA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 0,
         },
         {
           date: '21/05',
           time: '21:30',
-          homeTeam: { name: 'Vasco', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hHwT8LwRmYCAGxQ-STLxYA_48x48.png' },
-          awayTeam: { name: 'Fortaleza', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png' },
+          homeTeam: {
+            name: 'Vasco', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hHwT8LwRmYCAGxQ-STLxYA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Fortaleza', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 3,
           awayScore: 3,
         },
         {
           date: '01/05',
           time: '21:30',
-          homeTeam: { name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
+          homeTeam: {
+            name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           awayTeam: { name: 'Amazonas', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/uuUY0RAXejVcckwdPoVyBQ_48x48.png' },
           homeScore: 1,
           awayScore: 0,
@@ -145,136 +290,306 @@ const CopadoBrasil = ({ navigation }) => {
         {
           date: '22/05',
           time: '21:30',
-          homeTeam: { name: 'Amazonas', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/uuUY0RAXejVcckwdPoVyBQ_48x48.png' },
-          awayTeam: { name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png' },
+          homeTeam: {
+            name: 'Amazonas', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/uuUY0RAXejVcckwdPoVyBQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Flamengo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 1,
         },
         {
           date: '02/05',
           time: '19:30',
-          homeTeam: { name: 'Águia de Marabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/2GeWMGrfg-1oZOBkC0DWhA_48x48.png' },
-          awayTeam: { name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png' },
+          homeTeam: {
+            name: 'Águia de Marabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/2GeWMGrfg-1oZOBkC0DWhA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 3,
         },
         {
           date: '23/05',
           time: '21:30',
-          homeTeam: { name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png' },
-          awayTeam: { name: 'Águia de Marabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/2GeWMGrfg-1oZOBkC0DWhA_48x48.png' },
+          homeTeam: {
+            name: 'São Paulo', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Águia de Marabá', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/2GeWMGrfg-1oZOBkC0DWhA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 0,
         },
         {
           date: '02/05',
           time: '21:30',
-          homeTeam: { name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png' },
-          awayTeam: { name: 'Botafogo-SP', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/VYXHOgQwI7tw3EyFlWngWg_48x48.png' },
+          homeTeam: {
+            name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Botafogo-SP', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/VYXHOgQwI7tw3EyFlWngWg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 1,
         },
         {
           date: '23/05',
           time: '19:00',
-          homeTeam: { name: 'Botafogo-SP', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/VYXHOgQwI7tw3EyFlWngWg_48x48.png' },
-          awayTeam: { name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png' },
+          homeTeam: {
+            name: 'Botafogo-SP', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/VYXHOgQwI7tw3EyFlWngWg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Palmeiras', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 0,
         },
         {
           date: '01/05',
           time: '18:00',
-          homeTeam: { name: 'Ypiranga-RS', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hNX_cbKDANEj_oTo1jlL7Q_48x48.png' },
-          awayTeam: { name: 'Athletico-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9LkdBR4L5plovKM8eIy7nQ_48x48.png' },
+          homeTeam: {
+            name: 'Ypiranga-RS', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hNX_cbKDANEj_oTo1jlL7Q_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Athletico-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9LkdBR4L5plovKM8eIy7nQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 1,
         },
         {
           date: '13/07',
           time: '18:00',
-          homeTeam: { name: 'Athletico-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9LkdBR4L5plovKM8eIy7nQ_48x48.png' },
-          awayTeam: { name: 'Ypiranga-RS', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hNX_cbKDANEj_oTo1jlL7Q_48x48.png' },
+          homeTeam: {
+            name: 'Athletico-PR', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9LkdBR4L5plovKM8eIy7nQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Ypiranga-RS', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/hNX_cbKDANEj_oTo1jlL7Q_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: null,
           awayScore: null,
         },
         {
           date: '10/07',
           time: '19:00',
-          homeTeam: { name: 'Internacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png' },
-          awayTeam: { name: 'Juventude', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png' },
+          homeTeam: {
+            name: 'Internacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Juventude', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: null,
           awayScore: null,
         },
         {
           date: '13/07',
           time: '16:00',
-          homeTeam: { name: 'Juventude', logoUrl:'https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png'},
-          awayTeam: { name: 'Internacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png' },
+          homeTeam: {
+            name: 'Juventude', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Internacional', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: null,
           awayScore: null,
         },
         {
           date: '02/05',
           time: '20:30',
-          homeTeam: { name: 'CRB', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/zEM-aepnkjTSoBMW9LH_Qw_48x48.png' },
-          awayTeam: { name: 'Ceará', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png' },
+          homeTeam: {
+            name: 'CRB', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/zEM-aepnkjTSoBMW9LH_Qw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Ceará', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
         {
           date: '23/05',
           time: '21:30',
-          homeTeam: { name: 'Ceará', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png' },
-          awayTeam: { name: 'CRB', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/zEM-aepnkjTSoBMW9LH_Qw_48x48.png' },
+          homeTeam: {
+            name: 'Ceará', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'CRB', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/zEM-aepnkjTSoBMW9LH_Qw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 1,
         },
         {
           date: '01/05',
           time: '20:00',
-          homeTeam: { name: 'América-RN', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OdQJxRXXp2gxKWl7JkPsmw_48x48.png' },
-          awayTeam: { name: 'Corinthians', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png' },
+          homeTeam: {
+            name: 'América-RN', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OdQJxRXXp2gxKWl7JkPsmw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Corinthians', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 2,
         },
         {
           date: '22/05',
           time: '20:00',
-          homeTeam: { name: 'Corinthians', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png' },
-          awayTeam: { name: 'América-RN', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OdQJxRXXp2gxKWl7JkPsmw_48x48.png' },
+          homeTeam: {
+            name: 'Corinthians', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'América-RN', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/OdQJxRXXp2gxKWl7JkPsmw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 1,
         },
         {
           date: '01/05',
           time: '16:00',
-          homeTeam: { name: 'Brusque', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/ykKt1U6PEpMP7iiXwZvdBQ_48x48.png' },
-          awayTeam: { name: 'Atlético-GO', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png' },
+          homeTeam: {
+            name: 'Brusque', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/ykKt1U6PEpMP7iiXwZvdBQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Atlético-GO', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 0,
           awayScore: 1,
         },
         {
           date: '22/05',
           time: '19:00',
-          homeTeam: { name: 'Atlético-GO', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png' },
-          awayTeam: { name: 'Brusque', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/ykKt1U6PEpMP7iiXwZvdBQ_48x48.png' },
+          homeTeam: {
+            name: 'Atlético-GO', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Brusque', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/ykKt1U6PEpMP7iiXwZvdBQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 4,
           awayScore: 2,
         },
         {
           date: '30/04',
           time: '21:30',
-          homeTeam: { name: 'Atlético-MG', logoUrl:  'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png' },
-          awayTeam: { name: 'Sport', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png' },
+          homeTeam: {
+            name: 'Atlético-MG', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Sport', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 2,
           awayScore: 0,
         },
         {
           date: '22/05',
           time: '20:00',
-          homeTeam: { name: 'Sport', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png' },
-          awayTeam: { name: 'Atlético-MG', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png' },
+          homeTeam: {
+            name: 'Sport', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
+          awayTeam: {
+            name: 'Atlético-MG', logoUrl: 'https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png',
+            classification: '15º Lugar',
+            statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+            players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+          },
           homeScore: 1,
           awayScore: 0,
         },
@@ -284,8 +599,18 @@ const CopadoBrasil = ({ navigation }) => {
       date: ' OITAVAS SEMANA 31/07',
       round: 'OITAVAS-DE-FINAL',
       matches: Array(8).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+        homeTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
+        awayTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
         homeScore: null,
         awayScore: null,
       }),
@@ -294,8 +619,18 @@ const CopadoBrasil = ({ navigation }) => {
       date: 'SEMANA 07/08',
       round: 'OITAVAS-DE-FINAL',
       matches: Array(8).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+        homeTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
+        awayTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
         homeScore: null,
         awayScore: null,
       }),
@@ -304,8 +639,18 @@ const CopadoBrasil = ({ navigation }) => {
       date: 'A DEFINIR',
       round: 'QUARTAS-DE-FINAL',
       matches: Array(4).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+        homeTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
+        awayTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
         homeScore: null,
         awayScore: null,
       }),
@@ -314,8 +659,18 @@ const CopadoBrasil = ({ navigation }) => {
       date: 'A DEFINIR',
       round: 'SEMI-FINAL',
       matches: Array(2).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+        homeTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
+        awayTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
         homeScore: null,
         awayScore: null,
       }),
@@ -324,8 +679,18 @@ const CopadoBrasil = ({ navigation }) => {
       date: 'A DEFINIR',
       round: 'FINAL',
       matches: Array(1).fill({
-        homeTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
-        awayTeam: { name: 'A definir', logoUrl: placeholderLogoUrl },
+        homeTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
+        awayTeam: {
+          name: 'A definir', logoUrl: placeholderLogoUrl,
+          classification: '15º Lugar',
+          statistics: { chutes: 12, chutesAGol: 6, posseDeBola: "38%", passes: 343, precisaoDePasse: "75%", faltas: 15, cartoesAmarelos: 2, cartoesVermelhos: 0, impedimentos: 0, escanteios: 2 },
+          players: ['1. Lucas Arcanjo', '27. R. Cáceres', '15. C. da Conceição', '4. Wagner', '16. Lucas Esteves', '8. Luan', '30. Matheusinho', '29. Willian', '5. L. Naldi', '11. Osvaldo', '9. Alerrandro', '[T] Thiago Carpini']
+        },
         homeScore: null,
         awayScore: null,
       }),
