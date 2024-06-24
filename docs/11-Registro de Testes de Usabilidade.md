@@ -8,12 +8,12 @@
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Referência 	| ![Homepage](img/loginGIF.gif)   |
+| Referência 	| ![Homepage](img/LoginGif[1].gif)   |
 | Avalição | - O usuário fez login com sucesso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Acessar tabelas dos campeonatos**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar tabela do campeonato |
-| Referência 	| ![Homepage](img/editarperfilgif.gif) |
+| Referência 	| ![Homepage](img/SerieAGif[2].gif) |
 | Avalição | - O usuário acessou a tabela com sucesso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-04 – Acessar Dados dos jogos**	|
