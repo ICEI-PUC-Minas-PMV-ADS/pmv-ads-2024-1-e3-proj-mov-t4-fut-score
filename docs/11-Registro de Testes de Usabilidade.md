@@ -3,7 +3,7 @@
 | **Caso de Teste** 	| **CT-01 – Fazer Cadastro** 	|
 |:---:	|:---:	|
 |	Objetivo do Teste 	| Verificar se o  usuário consegue se cadastrar de maneira satisfatória . |
-| Referência 	| ![Homepage](img/cadastrogif.gif) |
+| Referência 	| ![Homepage](img/CadastroGif[1].gif) |
 | Avalição | - O usuário se cadastrou com sucesso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
