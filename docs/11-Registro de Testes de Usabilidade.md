@@ -13,7 +13,7 @@
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Acessar tabelas dos campeonatos**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar tabela do campeonato |
-| Referência 	| ![Homepage](img/SerieAGif[2].gif) ![Homepage](img/CampsGif.gif) |
+| Referência 	| ![Homepage](img/SerieAGif[2].gif) ![Homepage](img/NavCDBGif[1].gif) ![Homepage](img/CampsGif.gif) |
 | Avalição | - O usuário acessou a tabela com sucesso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-04 – Acessar Dados dos jogos**	|
