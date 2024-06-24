@@ -13,11 +13,11 @@
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Acessar tabelas dos campeonatos**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar tabela do campeonato |
-| Referência 	| ![Homepage](img/SerieAGif[2].gif) |
+| Referência 	| ![Homepage](img/SerieAGif[2].gif) ![Homepage](img/CampsGif.gif) |
 | Avalição | - O usuário acessou a tabela com sucesso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-04 – Acessar Dados dos jogos**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar as informações do jogo |
-| Referência 	| ![Homepage](img/candidatargif.gif) |
+| Referência 	| ![Homepage](img/TelaClassificação.png) ![Homepage](img/TelaEstatiísticas.png) ![Homepage](img/Telaescalação.png)|
 | Avalição | - O usuário conseguiu acessar as informações com sucesso |
 |  	|  	|
