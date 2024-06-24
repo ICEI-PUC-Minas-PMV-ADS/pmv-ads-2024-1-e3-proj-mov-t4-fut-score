@@ -31,11 +31,22 @@ Os participantes reais interagem com o aplicativo enquanto um moderador observa 
 | **Caso de Teste** 	| **CT-01 – Fazer Cadastro** 	|
 |:---:	|:---:	|
 |	Objetivo do Teste 	| Verificar se o  usuário Candidato consegue se cadastrar de maneira satisfatória . |
-| Passos 	| - Acessar o site <br> - Preencher os dados necessários para o cadastro  -<br>  |
+| Passos 	| - Acessar o app <br> - Preencher os dados necessários para o cadastro  -<br>  |
 |Critério de Êxito | - O usuário devera considerar o sistema intuitivo e de fácil utilização. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o site <br> - Preencher os dados necessários e efetuar o Login |
+| Passos 	| - Acessar o app <br> - Preencher os dados necessários e efetuar o Login |
 |Critério de Êxito | - Obter êxito em logar na aplicação e ser direcionado para a pagina inicial. |
 |  	|  	|
+| **Caso de Teste** 	| **CT-03 – Acessar tabelas dos campeonatos**	|
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar as tabelas dos campeonatos. |
+| Passos 	| - Acessar o app <br> - Clicar no menu e ir no campeonato desejado ou clicar no simbolo do campeonato desejado na tela home |
+|Critério de Êxito | - Obter êxito ao acessar a tabela desejada. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Acessar Dados dos jogos**	|
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar as informações do jogo. |
+| Passos 	| - Acessar o app <br> - Clicar no card do jogo na tela home |
+|Critério de Êxito | - Obter êxito ao acessar as informações desejadas. |
+|  	|  	|
+
