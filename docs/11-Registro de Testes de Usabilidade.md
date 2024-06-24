@@ -1,8 +1,23 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+| **Caso de Teste** 	| **CT-01 – Fazer Cadastro** 	|
+|:---:	|:---:	|
+|	Objetivo do Teste 	| Verificar se o  usuário consegue se cadastrar de maneira satisfatória . |
+| Referência 	| ![Homepage](img/cadastrogif.gif) |
+| Avalição | - O usuário se cadastrou com sucesso |
+|  	|  	|
+| **Caso de Teste** 	| **CT-02 – Efetuar login**	|
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
+| Referência 	| ![Homepage](img/loginGIF.gif)   |
+| Avalição | - O usuário fez login com sucesso |
+|  	|  	|
+| **Caso de Teste** 	| **CT-03 – Acessar tabelas dos campeonatos**	|
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar tabela do campeonato |
+| Referência 	| ![Homepage](img/editarperfilgif.gif) |
+| Avalição | - O usuário acessou a tabela com sucesso |
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Acessar Dados dos jogos**	|
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar as informações do jogo |
+| Referência 	| ![Homepage](img/candidatargif.gif) |
+| Avalição | - O usuário conseguiu acessar as informações com sucesso |
+|  	|  	|
