@@ -1,22 +1,22 @@
 message: Please cite this software using these metadata.
-title:
+title: Fut Score
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Santos Celestino da Costa
+    given-names: Caio
+  - family-names: Henrique Santos da Silva
+    given-names: Carlos
+  - family-names: Gonçalves de Oliveira Machado
+    given-names: Matheus 
+  - family-names: Pontes Gazzinelli
+    given-names: Thiago
+  - family-names: Henrique Alves Mariano
+    given-names: Vinicius 
   - family-names: 
     given-names: 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Roberto Gonçalves de Pontes
+    given-names: Diego
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
@@ -26,4 +26,4 @@ keywords:
   - 
 repository-code: 
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-25
